@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z $(command -v stow) ] 
+then
+    echo "stow not installed, please install it to proceed."
+else
+	for i in */; do;
+		stow $i
+	done;
+fi
