@@ -1,22 +1,19 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-#Enviromental Variables
-
-if [ -d $HOME/Android ]; then
-  export ANDROID_HOME=/home/wafle/Android/Sdk
-  export ANDROID_SDK_ROOT=$ANDROID_HOME
-  export PATH=${PATH}:/home/wafle/Android/Sdk/platform-tools:/home/wafle/Android/Sdk/tools
-fi
-
-# elif [ -d /opt/android-sdk ]; then
-#   export ANDROID_HOME=/opt/android-sdk
-#   export ANDROID_SDK_ROOT=$ANDROID_HOME
-#   export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools/bin
-# fi
-
 # System Wide Environmental Variables
 source /etc/profile
+
+# Enviromental Variables
+# Android SDK CLI Tools or Android Studio or 
+if [ -d $HOME/Android ]; then
+  export ANDROID_HOME=$HOME/Android/Sdk
+  export ANDROID_SDK_ROOT=$ANDROID_HOME
+  export PATH=${PATH}:$HOME/Android/Sdk/platform-tools:$HOME/Android/Sdk/tools
+elif [ -d /opt/android-sdk ]; then
+  export ANDROID_SDK_ROOT=$ANDROID_HOME
+#   export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools/bin
+fi
 
 if [ -d $HOME/.scripts ]; then
   export PATH="${PATH}:$HOME/.scripts"
