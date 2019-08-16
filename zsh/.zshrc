@@ -5,7 +5,7 @@
 source /etc/profile
 
 # Enviromental Variables
-# Android SDK CLI Tools or Android Studio or 
+# Android SDK CLI Tools or Android Studio
 if [ -d $HOME/Android ]; then
   export ANDROID_HOME=$HOME/Android/Sdk
   export ANDROID_SDK_ROOT=$ANDROID_HOME
@@ -25,6 +25,14 @@ if [ -d ~/.node_modules ]; then
     export PATH="${PATH}:$HOME/.node_modules/bin"
   fi
 fi
+
+if [ -d /usr/share/nvm ]; then
+  # Set up Node Version Manager
+  export NVM_DIR="$HOME/.nvm"                            # You can change this if you want.
+  export NVM_SOURCE="/usr/share/nvm"                     # The AUR package installs it to here.
+  [ -s "$NVM_SOURCE/nvm.sh" ] && . "$NVM_SOURCE/nvm.sh"  # Load NVM
+fi
+
 
 # Hardware Acceleration
 export LIBVA_DRIVER_NAME=vdpau
