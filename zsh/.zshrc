@@ -164,7 +164,6 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 
 alias purge='sudo pacman -Rns $(pacman -Qtdq)'
-alias nano='nano -S'
 alias run='export PATH=$PATH:$(pwd)'
 alias frances='xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"'
 alias subs='subdl --lang="spa"'
