@@ -5,17 +5,12 @@
 source /etc/profile
 
 # Enviromental Variables
-# Android Studio 
+# Android SDK CLI Tools or Android Studio
 if [ -d $HOME/Android ]; then
   export ANDROID_HOME=$HOME/Android/Sdk
   export ANDROID_SDK_ROOT=$ANDROID_HOME
   export PATH=${PATH}:$HOME/Android/Sdk/platform-tools:$HOME/Android/Sdk/tools
-#fi
-
-# Android SDK CLI Tools
-
 elif [ -d /opt/android-sdk ]; then
-#  export ANDROID_HOME=/opt/android-sdk
   export ANDROID_SDK_ROOT=$ANDROID_HOME
 #   export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools/bin
 fi
@@ -30,6 +25,14 @@ if [ -d ~/.node_modules ]; then
     export PATH="${PATH}:$HOME/.node_modules/bin"
   fi
 fi
+
+# if [ -d /usr/share/nvm ]; then
+#   # Set up Node Version Manager
+#   export NVM_DIR="$HOME/.nvm"                            # You can change this if you want.
+#   export NVM_SOURCE="/usr/share/nvm"                     # The AUR package installs it to here.
+#   [ -s "$NVM_SOURCE/nvm.sh" ] && . "$NVM_SOURCE/nvm.sh"  # Load NVM
+# fi
+
 
 # Hardware Acceleration
 export LIBVA_DRIVER_NAME=vdpau
@@ -161,7 +164,6 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 
 alias purge='sudo pacman -Rns $(pacman -Qtdq)'
-alias nano='nano -S'
 alias run='export PATH=$PATH:$(pwd)'
 alias frances='xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"'
 alias subs='subdl --lang="spa"'
