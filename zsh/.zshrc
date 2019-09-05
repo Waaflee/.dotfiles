@@ -17,6 +17,7 @@ fi
 
 if [ -d $HOME/.scripts ]; then
   export PATH="${PATH}:$HOME/.scripts"
+  source $HOME/.scripts/utils.sh
 fi
 
 if [ -d ~/.node_modules ]; then
