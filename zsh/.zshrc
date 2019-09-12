@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # System Wide Environmental Variables
-source /etc/profile
+# source /etc/profile
 
 # Enviromental Variables
 # Android SDK CLI Tools or Android Studio
@@ -11,12 +11,15 @@ if [ -d $HOME/Android ]; then
   export ANDROID_SDK_ROOT=$ANDROID_HOME
   export PATH=${PATH}:$HOME/Android/Sdk/platform-tools:$HOME/Android/Sdk/tools
 elif [ -d /opt/android-sdk ]; then
+  # Should source package provided env vars
+  # source /etc/profile
   export ANDROID_SDK_ROOT=$ANDROID_HOME
-#   export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools/bin
 fi
 
+# Custom Scripts folder
 if [ -d $HOME/.scripts ]; then
   export PATH="${PATH}:$HOME/.scripts"
+  # Functions and nice-to-have utils
   source $HOME/.scripts/utils.sh
 fi
 
@@ -31,12 +34,15 @@ if [ -d $HOME/.yarn/bin ]; then
   export PATH="${PATH}:$HOME/.yarn/bin"
 fi
 
-# Hardware Acceleration
+# Hardware Acceleration for Nvidia driver
 export LIBVA_DRIVER_NAME=vdpau
 export VDPAU_DRIVER=nvidia
 
 # Color on man pages
-export PAGER=most
+# export PAGER=most
+
+# Better Pager with sintax highlighting and git integration
+export PAGER=bat
 
 # Trash support on electron based applications
 export ELECTRON_TRASH=gio
@@ -127,11 +133,11 @@ plugins=(git)
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='micro'
+else
+  export EDITOR='micro'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
