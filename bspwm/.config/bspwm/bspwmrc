@@ -4,7 +4,7 @@ export BSPWM=true
 
 sxhkd &
 setxkbmap -layout latam
-
+xsetroot -cursor_name left_ptr
 # Walpaper and shell colors setter
 # $HOME/.scripts/wallpaper.sh
 wal -n -i /media/Datos/Agustín/Imágenes/Ultrawide
