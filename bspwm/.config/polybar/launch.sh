@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+(wal -i "$(< "${HOME}/.cache/wal/wal")")
+
 # Terminate already running bar instances
 killall -q polybar
 
@@ -7,6 +9,9 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
-polybar top &
+polybar main
+
+# set toggle variable
+POLYBARON = 1
 
 echo "Bars launched..."

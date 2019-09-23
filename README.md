@@ -19,7 +19,9 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   
 Installed packages are: 
 ```
-bspwm-git sxhkd-git polybar-git compton-tryone-git kitty python-pywal feh playerctl rofi rofi-clacl siji-git scrot numlockx
+bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
+python-pywal feh playerctl rofi rofi-clacl siji-git scrot 
+numlockx  xorg-xsetroot
 ``` 
 ## trizen
 
