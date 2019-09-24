@@ -54,8 +54,6 @@ if [[ $BSPWM ]]; then
   # Pywal Colorscheme on all terminals
   # Import colorscheme from 'wal' asynchronously
   (cat ~/.cache/wal/sequences &)
-  # Alternative (blocks terminal for 0-3ms)
-  #cat ~/.cache/wal/sequences
 fi
 
 # Base16 Shell
