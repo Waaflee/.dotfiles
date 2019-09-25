@@ -1,3 +1,11 @@
+[colors]
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+
 [bar/main]
 ; Use either of the following command to list available outputs:
 ; If unspecified, the application will pick the first one it finds.
@@ -29,15 +37,17 @@ fixed-center = true
 ; Dimension defined as pixel value (e.g. 35) or percentage (e.g. 50%),
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in a width or height of 50% minus 10 pixels
-width = 93.25%
+;width = 93.25%
+width = 2544
 height = 37
 
 ; Offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in an offset in the x or y direction 
 ; of 50% minus 10 pixels
-offset-x = 3.4%
-offset-y = 12
+;offset-x = 3.4%
+offset-x = 8
+offset-y = 8
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
 ;background = #991b1d1e
@@ -56,7 +66,7 @@ foreground = #000
 ; pseudo-transparency or use a compositor like compton.
 ; Individual top/bottom values can be defined using:
 ;   radius-{top,bottom}
-radius = 5.0
+radius = 0
 
 ; Under-/overline pixel size and argb color
 ; Individual values can be defined using:
@@ -81,7 +91,7 @@ line-color = #f00
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
 ;   padding-{left,right}
-padding-right = 4
+padding-right = 1
 
 ; Number of spaces to add before/after each module
 ; Individual side values can be defined using:
@@ -103,8 +113,8 @@ font-1 = FontAwesome5Free:style=Solid:size=10;2
 ;   modules-center = xwindow xbacklight
 ;   modules-right = ipc clock
 modules-left = bspwm
-modules-center =
-modules-right = temperature sep memory sep cpu sep date
+modules-center = date
+modules-right = temperature sep memory sep cpu
 
 ; The separator will be inserted between the output of each module
 separator =
@@ -166,7 +176,7 @@ tray-scale = 1.0
 ; Currently 333399supported WM's:
 ;   bspwm
 ;   i3 (requires: `override-redirect = true`)
-;wm-restack = bspwm
+wm-restack = bspwm
 
 ; Set a DPI values used when rendering text
 ; This only affects scalable fonts
@@ -181,9 +191,9 @@ enable-ipc = false
 
 ; Fallback click handlers that will be called if
 ; there's no matching module handler found.
-[module/bspwm]
-type = internal/bspwm
-
+ [module/bspwm]
+ type = internal/bspwm
+ 
 ; Only show workspaces defined on the same output as the bar
 ;
 ; Useful if you want to show monitor specific workspaces
@@ -224,22 +234,26 @@ reverse-scroll = true
 ; Default: false
 fuzzy-match = true
 
-;label-unfocused = %index%
-;label-unfocused-padding = 2
-;label-unfocused-foreground = #ffffff
-;label-unfocused-underline = #fba922
-
-label-unfocused = %index%
-label-unfocused-foreground = #fff
-label-unfocused-background = #465457
-label-unfocused-underline = #fba922
-label-unfocused-padding = 2
-
-label-focused = %index%
-label-focused-foreground = #fff
-label-focused-background = #465457
-label-focused-underline = #fba922
-label-focused-padding = 2
+ label-focused = %index%
+ label-focused-background = #465457
+ label-focused-foreground = ${colors.foreground-alt}
+ label-focused-underline= #fba922
+ label-focused-padding = 2
+ 
+ label-occupied = %index%
+ label-occupied-foreground = ${colors.foreground-alt}
+ label-occupied-padding = 2
+ 
+ label-urgent = %index%!
+ label-urgent-background = ${colors.alert}
+ label-urgent-padding = 2
+ 
+ label-empty = %index%
+ label-empty-foreground = #00000000
+ label-empty-padding = 2
+ 
+ ; Separator in between workspaces
+ ; label-separator = |
 
 [module/date]
 type = internal/date
@@ -249,7 +263,9 @@ interval = 1.0
 
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = %Y-%m-%d%
+;date = %Y-%m-%d%
+;date = %d-%m%
+date = %A%
 
 ; Optional time format
 time = %H:%M

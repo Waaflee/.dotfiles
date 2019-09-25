@@ -137,7 +137,7 @@ plugins=(git)
 
 # You may need to manually set your language environment
 export LANG=es_AR.UTF-8
-export LC_CTYPE=ee_AR.UTF-8
+export LC_CTYPE=es_AR.UTF-8
 export LC_ALL=es_AR.UTF-8
 
 # Preferred editor for local and remote sessions
