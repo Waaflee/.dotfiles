@@ -1,7 +1,7 @@
 source utils.sh
 
-export ULTRAWIDE=/media/Datos/Agustín/Imágenes/Ultrawide
+ULTRAWIDE=/media/Datos/Agustín/Imágenes/Ultrawide
 while true; do
+	sleep 10
 	walset $ULTRAWIDE
-	sleep 180
 done

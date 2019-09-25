@@ -1,10 +1,16 @@
 [colors]
-background = ${xrdb:color0:#222}
-foreground = ${xrdb:color7:#222}
-foreground-alt = ${xrdb:color7:#222}
+background = #263238
+background-alt = #607d8b
+foreground = #eceff1 
+foreground-alt = #212121
 primary = ${xrdb:color1:#222}
 secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
+text = #eceff1
+temperature = #e91e63
+;ram = #673ab7
+ram = #aa00ff
+cpu = #304ffe
 
 [bar/main]
 ; Use either of the following command to list available outputs:
@@ -105,7 +111,7 @@ module-margin = 1
 ;   font-2 = Termsynu:size=8;-1
 ;   font-3 = FontAwesome:size=10
 ; See the Fonts wiki page for more details
-font-0 = Inconsolata:bold:size=10;1.5
+font-0 = Fira Code:size=10;2.5
 font-1 = FontAwesome5Free:style=Solid:size=10;2
 
 ; Modules are added to one of the available blocks
@@ -235,13 +241,13 @@ reverse-scroll = true
 fuzzy-match = true
 
  label-focused = %index%
- label-focused-background = #465457
- label-focused-foreground = ${colors.foreground-alt}
+ label-focused-background = ${colors.background-alt}
+ label-focused-foreground = ${colors.foreground}
  label-focused-underline= #fba922
  label-focused-padding = 2
  
  label-occupied = %index%
- label-occupied-foreground = ${colors.foreground-alt}
+ label-occupied-foreground = ${colors.foreground}
  label-occupied-padding = 2
  
  label-urgent = %index%!
@@ -277,7 +283,7 @@ time-alt = %H:%M:%S
 
 label = %date% %time% 
 label-font = 0
-label-foreground = #fff
+label-foreground = ${colors.text}
 
 [module/wireless-network]
 type = internal/network
@@ -317,7 +323,8 @@ interval = 0.5
 
 label =  %percentage%%
 
-label-foreground = #0066CC
+;label-foreground = #0066CC
+label-foreground = ${colors.cpu}
 label-padding-right = 1
 
 [module/memory]
@@ -348,7 +355,8 @@ format = <label>
 
 label =  %gb_used%
 
-label-foreground = #8C54FE
+;label-foreground = #8C54FE
+label-foreground = ${colors.ram}
 
 [module/temperature]
 type = internal/temperature
@@ -386,7 +394,8 @@ format = <label>
 ;   %temperature-f%   (temperature in °F)
 label =  %temperature-c%
 
-label-foreground = #F92672
+;label-foreground = #F92672
+label-foreground = ${colors.temperature}
 
 [module/decor-glyph]
 type = custom/text

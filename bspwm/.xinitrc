@@ -33,9 +33,11 @@ fi
 
 # Keyboard
 sxhkd &
+# Layout
 setxkbmap -layout latam
 # Ç Character
 xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"
+# NumLock on boot
 numlockx &
 
 # Notifications
@@ -46,17 +48,12 @@ xsetroot -cursor_name left_ptr
 xsetroot -solid "#646464"
 
 # Desktop 
-# Walpaper and shell colors setter
-$HOME/.scripts/wallpaper.sh
-# wal -n -i /media/Datos/Agustín/Imágenes/Ultrawide
-# feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
-
+# Walpaper
+feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 # Launch polybar
 $HOME/.config/polybar/launch.sh
-
 # Launch compton
 $HOME/.config/compton/launch.sh
-
 # Night Light
 redshift &
 
