@@ -31,14 +31,21 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-
+# Keyboard
 sxhkd &
 setxkbmap -layout latam
+# Ç Character
+xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"
 numlockx &
 
+# Notifications
+dunst&
+
+# Mouse & Pointer
 xsetroot -cursor_name left_ptr
 xsetroot -solid "#646464"
 
+# Desktop 
 # Walpaper and shell colors setter
 $HOME/.scripts/wallpaper.sh
 # wal -n -i /media/Datos/Agustín/Imágenes/Ultrawide
@@ -50,8 +57,8 @@ $HOME/.config/polybar/launch.sh
 # Launch compton
 $HOME/.config/compton/launch.sh
 
+# Night Light
 redshift &
-xsetroot -cursor_name left_ptr 
 
 export PYWAL=true
 export XDG_CONFIG_HOME="$HOME/.config" 

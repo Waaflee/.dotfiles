@@ -24,7 +24,7 @@ Installed packages are:
 ```
 bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
 python-pywal feh playerctl rofi rofi-clacl siji-git scrot 
-numlockx  xorg-xsetroot dunst xorg-xinit
+numlockx xorg-xsetroot dunst xorg-xinit
 ``` 
 
 For Redshift to work it's necessary to add the following lines to `/etc/geoclue/geoclue.conf`
