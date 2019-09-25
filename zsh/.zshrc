@@ -50,6 +50,12 @@ export ELECTRON_TRASH=gio
 # Vim Colors
 export TERM=xterm-256color
 
+if [[ $BSPWM ]]; then
+  # Pywal Colorscheme on all terminals
+  # Import colorscheme from 'wal' asynchronously
+  (cat ~/.cache/wal/sequences &)
+fi
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-material.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
@@ -130,7 +136,9 @@ plugins=(git)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=es_AR.UTF-8
+export LC_CTYPE=es_AR.UTF-8
+export LC_ALL=es_AR.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
