@@ -49,7 +49,8 @@ xsetroot -solid "#646464"
 
 # Desktop 
 # Walpaper
-feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
+# feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
+nitrogen --restore
 # Launch polybar
 $HOME/.config/polybar/launch.sh
 # Launch compton
