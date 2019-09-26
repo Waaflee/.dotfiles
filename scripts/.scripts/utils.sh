@@ -7,5 +7,5 @@ optimizepdf() {
 
 walset() {
     wal -n -i "$@"
-    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+    feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 }

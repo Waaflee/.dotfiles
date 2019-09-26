@@ -1,23 +1,9 @@
 #! /bin/sh
 
-export BSPWM=true
-
-sxhkd &
-setxkbmap -layout latam
-# Walpaper and shell colors setter
-# $HOME/.scripts/wallpaper.sh
-wal -n -i /media/Datos/Agustín/Imágenes/Ultrawide
-feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
-
-# Launch polybar
-$HOME/.config/polybar/launch.sh
-
-# Launch compton
-$HOME/.config/compton/launch.sh
-
-
-# source the colors.
-. "${HOME}/.cache/wal/colors.sh"
+if [[ $PYWAL ]]; then
+    # Pywal Colorscheme
+    . "${HOME}/.cache/wal/colors.sh"
+fi
 
 # Set the border colors.
 bspc config normal_border_color "$color1"
@@ -26,7 +12,7 @@ bspc config focused_border_color "$color15"
 bspc config presel_feedback_color "$color1"
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
-bspc monitor -d 1 2 3 4 5
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 bspc config border_width         2
 bspc config window_gap           8
@@ -40,6 +26,3 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-
-# redshift -l -32.859476:-68.875996 &
-xsetroot -cursor_name left_ptr 

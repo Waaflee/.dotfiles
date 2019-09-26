@@ -50,7 +50,7 @@ export ELECTRON_TRASH=gio
 # Vim Colors
 export TERM=xterm-256color
 
-if [[ $BSPWM ]]; then
+if [[ $PYWAL ]]; then
   # Pywal Colorscheme on all terminals
   # Import colorscheme from 'wal' asynchronously
   (cat ~/.cache/wal/sequences &)
