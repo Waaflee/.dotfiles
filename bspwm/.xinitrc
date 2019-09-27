@@ -49,16 +49,13 @@ xsetroot -solid "#646464"
 
 # Desktop 
 # Walpaper
-# feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 nitrogen --restore
-# Launch polybar
-$HOME/.config/polybar/launch.sh
+# Polybar launched on bspwmrc
 # Launch compton
 $HOME/.config/compton/launch.sh
 # Night Light
 redshift &
 
-export PYWAL=true
 export XDG_CONFIG_HOME="$HOME/.config" 
 export XDG_CURRENT_DESKTOP=GNOME
 export DE=gnome
