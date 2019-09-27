@@ -22,7 +22,7 @@ font-1 = FontAwesome5Free:style=Solid:size=10;2
 
 modules-left = bspwm
 modules-center = date
-modules-right = temperature sep ram sep cpu
+modules-right = temperature sep ram sep cpu sep battery sep wifi sep pulseaudio
 ; The separator will be inserted between the output of each module
 separator =
 dim-value = 1.0

@@ -6,8 +6,8 @@ full-at = 99
 
 ; Use the following command to list batteries and adapters:
 ; $ ls -1 /sys/class/power_supply/
-battery = BAT0
-adapter = ADP1
+battery = BAT1
+adapter = ACAD
 
 ; If an inotify event haven't been reported in this many
 ; seconds, manually poll for new values.
@@ -56,12 +56,12 @@ label-charging =  %percentage%%
 ;   %percentage_raw%
 ;   %time%
 ;   %consumption% (shows current discharge rate in watts)
-label-discharging = %percentage%%
+label-discharging =  %percentage%%
 
 ; Available tokens:
 ;   %percentage% (default) - is set to 100 if full-at is reached
 ;   %percentage_raw%
-label-full = 
+label-full =  %percentage%%
 
 ; Only applies if <ramp-capacity> is used
 ramp-capacity-0 = 
