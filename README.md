@@ -30,6 +30,11 @@ Polybar Icons:
 ```
 ttf-font-awesome 
 ```
+Fonts:
+```
+ttf-fira-code ttf-dejavu
+```
+
 
 For Redshift to work it's necessary to add the following lines to `/etc/geoclue/geoclue.conf`
 ```
