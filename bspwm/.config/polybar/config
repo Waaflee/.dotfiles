@@ -8,18 +8,17 @@ include-file = /home/wafle/.config/polybar/modules/temperature
 include-file = /home/wafle/.config/polybar/modules/wifi
 
 [colors]
+background-1 = #263238
+background-2 = #263238
+background-3 = #263238
+foreground = #eceff1 
 background = #263238
 background-alt = #607d8b
-foreground = #eceff1 
-foreground-alt = #212121
-primary = #ffc107
-secondary = #cfd8dc
-alert = #ff5722
-text = #eceff1
 temperature = #e91e63
-;ram = #673ab7
 ram = #aa00ff
 cpu = #304ffe
+alert = #304ffe
+text = #eceff1 
 
 [bar/main]
 ; Use either of the following command to list available outputs:
