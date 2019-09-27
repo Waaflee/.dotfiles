@@ -1,21 +1,31 @@
+include-file = /home/wafle/.config/polybar/modules/battery
+include-file = /home/wafle/.config/polybar/modules/bspwm
+include-file = /home/wafle/.config/polybar/modules/cpu
+include-file = /home/wafle/.config/polybar/modules/date
+include-file = /home/wafle/.config/polybar/modules/pulseaudio
+include-file = /home/wafle/.config/polybar/modules/ram
+include-file = /home/wafle/.config/polybar/modules/temperature
+include-file = /home/wafle/.config/polybar/modules/wifi
+
 [colors]
-background-0 = #212121
 background-1 = #263238
-background-2 = #37474f
-background-3 = #455a64
-background-4 = #546e7a
-background-5 = #607d8b
-background-6 = #78909c
-primary = #eceff1
-secondary = 
+background-2 = #263238
+background-3 = #263238
+foreground = #eceff1 
+background = #263238
+background-alt = #607d8b
+temperature = #e91e63
+ram = #aa00ff
+cpu = #304ffe
+alert = #304ffe
+text = #eceff1 
 
-
-[bar/main]
+[bar/tiled]
 ; Use either of the following command to list available outputs:
 ; If unspecified, the application will pick the first one it finds.
 ; $ polybar -m | cut -d ':' -f 1
 ; $ xrandr -q | grep " connected" | cut -d ' ' -f1
-monitor = DP-1
+;monitor = ${env:Monitor:DP-1}
 
 ; Use the specified monitor as a fallback if the main one is not found.
 ; monitor-fallback =
@@ -42,16 +52,16 @@ fixed-center = true
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in a width or height of 50% minus 10 pixels
 ;width = 93.25%
-width = 100%
-height = 40
+width = 2544
+height = 32
 
 ; Offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in an offset in the x or y direction 
 ; of 50% minus 10 pixels
 ;offset-x = 3.4%
-offset-x = 0
-offset-y = 0
+offset-x = 8
+offset-y = 8
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
 ;background = #991b1d1e
@@ -110,6 +120,7 @@ module-margin = 1
 ;   font-3 = FontAwesome:size=10
 ; See the Fonts wiki page for more details
 font-0 = Fira Code:size=10;2.5
+;font-0 = Proxima Soft:style=Regular:size=10;2.5
 font-1 = FontAwesome5Free:style=Solid:size=10;2
 
 ; Modules are added to one of the available blocks
@@ -118,7 +129,7 @@ font-1 = FontAwesome5Free:style=Solid:size=10;2
 ;   modules-right = ipc clock
 modules-left = bspwm
 modules-center = date
-modules-right = temperature sep memory sep cpu
+modules-right = temperature sep ram sep cpu
 
 ; The separator will be inserted between the output of each module
 separator =
@@ -193,204 +204,11 @@ dpi-y = 96
 ; See the Messaging wiki page for more details.
 enable-ipc = false
 
-; Fallback click handlers that will be called if
-; there's no matching module handler found.
- [module/bspwm]
- type = internal/bspwm
- 
-; Only show workspaces defined on the same output as the bar
-;
-; Useful if you want to show monitor specific workspaces
-; on different bars
-;
-; Default: false
-pin-workspaces = true
+[module/decor-glyph]
+type = custom/text
+content-foreground = #888
+margin = 0
 
-; This will split the workspace name on ':'
-; Default: false
-strip-wsnumbers = true
-
-; Sort the workspaces by index instead of the default
-; sorting that groups the workspaces by output
-; Default: false
-index-sort = false
-
-; Create click handler used to focus workspace
-; Default: true
-enable-click = true
-
-; Create scroll handlers used to cycle workspaces
-; Default: true
-enable-scroll = true
-
-; Wrap around when reaching the first/last workspace
-; Default: true
-wrapping-scroll = true
-
-; Set the scroll cycle direction 
-; Default: true
-reverse-scroll = true
-
-; Use fuzzy (partial) matching on labels when assigning 
-; icons to workspaces
-; Example: code;♚ will apply the icon to all workspaces 
-; containing 'code' in the label
-; Default: false
-fuzzy-match = true
-
- label-focused = 
- label-focused-background = ${colors.background-alt}
- label-focused-foreground = ${colors.foreground}
- label-focused-underline= #cfd8dc
- label-focused-padding = 2
- 
- label-occupied = 
- label-occupied-foreground = ${colors.foreground}
- label-occupied-padding = 2
- 
- label-urgent = !
- label-urgent-background = ${colors.alert}
- label-urgent-padding = 2
- 
- label-empty = 
- label-empty-foreground = #00000000
- label-empty-padding = 2
- 
- ; Separator in between workspaces
- ; label-separator = |
-
-[module/date]
-type = internal/date
-
-; Seconds to sleep between updates
-interval = 1.0
-
-; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
-; NOTE: if you want to use syntax tags here you need to use %%{...}
-;date = %Y-%m-%d%
-;date = %d-%m%
-date = %A%
-
-; Optional time format
-time = %H:%M
-
-; if `date-alt` or `time-alt` is defined, clicking
-; the module will toggle between formats
-date-alt = %A, %d %B %Y
-time-alt = %H:%M:%S
-
-label = %date% %time% 
-label-font = 0
-label-foreground = ${colors.text}
-
-[module/wireless-network]
-type = internal/network
-interface = wlan0
-
-label-connected = %essid%
-format-connected = <ramp-signal>
-label-connected-foreground = #82B414
-
-format-disconnected = <label-disconnected>
-label-disconnected = Not connected
-label-disconnected-foreground = #BF616A
-
-ramp-signal-foreground = #82B414
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-5 = 
-
-;[module/spotify]
-;type = custom/script
-;interval = 1
-;format-prefix = " "
-;format = <label>
-;label-foreground = #82B414
-;format-prefix-foreground = #82B414
-;exec = python ~/.config/spotify_status.py -f '{artist} - {song}'
-
-[module/cpu]
-type = internal/cpu
-
-; Seconds to sleep between updates
-; Default: 1
-interval = 0.5
-
-label =  %percentage%%
-
-;label-foreground = #0066CC
-label-foreground = ${colors.cpu}
-label-padding-right = 1
-
-[module/memory]
-type = internal/memory
-
-; Seconds to sleep between updates
-; Default: 1
-interval = 0.5
-format = <label>
-
-; Available tokens:
-;   %percentage_used% (default)
-;   %percentage_free%
-;   %gb_used%
-;   %gb_free%
-;   %gb_total%
-;   %mb_used%
-;   %mb_free%
-;   %mb_total%
-;   %percentage_swap_used%
-;   %percentage_swap_free%
-;   %mb_swap_total%
-;   %mb_swap_free%
-;   %mb_swap_used%
-;   %gb_swap_total%
-;   %gb_swap_free%
-;   %gb_swap_used%
-
-label =  %gb_used%
-
-;label-foreground = #8C54FE
-label-foreground = ${colors.ram}
-
-[module/temperature]
-type = internal/temperature
-
-; Seconds to sleep between updates
-; Default: 1
-interval = 0.5
-
-; Thermal zone to use
-; To list all the zone types, run 
-; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
-; Default: 0
-thermal-zone = 0
-
-; Full path of temperature sysfs path
-; Use `sensors` to find preferred temperature source, then run
-; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
-; to find path to desired file
-; Default reverts to thermal zone setting
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input
-
-; Threshold temperature to display warning label (in degrees celsius)
-; Default: 80
-warn-temperature = 60
-
-format = <label>
-
-; Available tags:
-;   <label-warn> (default)
-;   <ramp>
-
-; Available tokens:
-;   %temperature% (deprecated)
-;   %temperature-c%   (default, temperature in °C)
-;   %temperature-f%   (temperature in °F)
-label =  %temperature-c%
-
-;label-foreground = #F92672
-label-foreground = ${colors.temperature}
+[module/sep]
+inherit = module/decor-glyph
+content = "/"
