@@ -17,7 +17,7 @@ cpu = #304ffe
 ; If unspecified, the application will pick the first one it finds.
 ; $ polybar -m | cut -d ':' -f 1
 ; $ xrandr -q | grep " connected" | cut -d ' ' -f1
-monitor = DP-1
+;monitor = ${env:Monitor:DP-1}
 
 ; Use the specified monitor as a fallback if the main one is not found.
 ; monitor-fallback =

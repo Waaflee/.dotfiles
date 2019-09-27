@@ -10,7 +10,7 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
 
   - bspwm: Window Manager.
   - sxhkd: Keybindings.
-  - rofi: Menues, and Application Launcher.
+  - rofi: Application Launcher.
   - compton: Compositor.
   - pywal: Wallpaper based color palette generation tool.
   - feh: Background setter.
@@ -26,6 +26,10 @@ bspwm-git sxhkd-git polybar-git compton-tryone-git kitty
 python-pywal feh playerctl rofi rofi-clacl siji-git scrot 
 numlockx xorg-xsetroot dunst xorg-xinit
 ``` 
+Polybar Icons:
+```
+ttf-font-awesome 
+```
 
 For Redshift to work it's necessary to add the following lines to `/etc/geoclue/geoclue.conf`
 ```
