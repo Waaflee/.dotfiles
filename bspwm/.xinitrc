@@ -58,12 +58,6 @@ $HOME/.config/compton/launch.sh
 # Night Light
 redshift &
 
-# Java apps fixes
-export AWT_TOOLKIT=MToolkit
-export _JAVA_AWT_WM_NONREPARENTING=1
-export _JAVA_OPTIONS='-Dsun.java2d.opengl=true -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel swing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-
-
 export PYWAL=true
 export XDG_CONFIG_HOME="$HOME/.config" 
 export XDG_CURRENT_DESKTOP=GNOME
