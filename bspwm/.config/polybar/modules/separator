@@ -1,0 +1,8 @@
+[module/decor-glyph]
+type = custom/text
+content-foreground = #888
+margin = 0
+
+[module/sep]
+inherit = module/decor-glyph
+content = "/"

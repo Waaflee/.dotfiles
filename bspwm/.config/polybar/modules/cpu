@@ -8,5 +8,5 @@ interval = 0.5
 label =  %percentage%%
 
 ;label-foreground = #0066CC
-label-foreground = ${colors.cpu}
+label-foreground = ${root.cpu}
 label-padding-right = 1

@@ -1,2 +1,25 @@
+[colors]
+background = #263238
+background-1 = #263238
+background-2 = #263238
+background-3 = #263238
+background-alt = #607d8b
+foreground = #eceff1 
+temperature = #e91e63
+ram = #aa00ff
+cpu = #304ffe
+alert = #304ffe
+text = #eceff1 
+
 include-file = /home/wafle/.config/polybar/bars/tiled
 include-file = /home/wafle/.config/polybar/bars/flat
+
+include-file = /home/wafle/.config/polybar/modules/battery
+include-file = /home/wafle/.config/polybar/modules/bspwm
+include-file = /home/wafle/.config/polybar/modules/cpu
+include-file = /home/wafle/.config/polybar/modules/date
+include-file = /home/wafle/.config/polybar/modules/pulseaudio
+include-file = /home/wafle/.config/polybar/modules/ram
+include-file = /home/wafle/.config/polybar/modules/temperature
+include-file = /home/wafle/.config/polybar/modules/wifi
+include-file = /home/wafle/.config/polybar/modules/separator
