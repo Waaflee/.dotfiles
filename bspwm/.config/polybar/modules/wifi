@@ -1,0 +1,19 @@
+[module/wifi]
+type = internal/network
+interface = wlan0
+
+label-connected = %essid%
+format-connected = <ramp-signal>
+label-connected-foreground = #82B414
+
+format-disconnected = <label-disconnected>
+label-disconnected = Not connected
+label-disconnected-foreground = #BF616A
+
+ramp-signal-foreground = #82B414
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-5 = 
