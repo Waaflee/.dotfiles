@@ -50,12 +50,6 @@ export ELECTRON_TRASH=gio
 # Vim Colors
 export TERM=xterm-256color
 
-if [[ $PYWAL ]]; then
-  # Pywal Colorscheme on all terminals
-  # Import colorscheme from 'wal' asynchronously
-  (cat ~/.cache/wal/sequences &)
-fi
-
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-material.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
