@@ -14,10 +14,10 @@ text = #eceff1
 
 monitor = ${env:Monitor:DP-1}
 fixed-center = true
-width = 2544
+width = 2510
 height = 32
-offset-x = 8
-offset-y = 8
+offset-x = 25
+offset-y = 25
 
 radius = 0
 line-size = 2
