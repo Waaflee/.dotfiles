@@ -3,7 +3,7 @@
     format= "%s\n%b"
     markup = full
     indicate_hidden = yes
-    alignment = center
+    alignment = left
     word_wrap = yes
     geometry = "0x0-30-30"
     shrink = no

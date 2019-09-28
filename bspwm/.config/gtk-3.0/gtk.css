@@ -1,5 +1,5 @@
 vte-terminal,
 terminal-window {
-    padding: 10px 10px 10px 10px;
-    -vte-terminal-inner-border: 10px 10px 10px 10px;
+    padding: 25px 25px 25px 25px;
+    -vte-terminal-inner-border: 25px 25px 25px 25px;
 }

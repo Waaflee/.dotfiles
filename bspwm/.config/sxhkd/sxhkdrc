@@ -1,27 +1,15 @@
-#
+
 # wm independent hotkeys
-#
-## terminal emulator
 super + Return
 	kitty	
 super + shift + Return
 	bspc rule -a \* -o state=floating && kitty
-
-# program launcher
 super + @space
 	rofi -show drun -show-icons
-
 super + c
 	rofi -show calc -modi calc -no-show-match -no-sort
 super + i
 	~/.config/rofi/rofi-wifi.sh
-
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
-
-#
-# bspwm hotkeys
 super + shift + w 
 	firefox
 control + alt + l
@@ -32,9 +20,11 @@ Print
 	scrot
 super + x
 	~/.config/rofi/rofi-power.sh
-#super + shift + p
-#	rofi-pass
-#
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# bspwm hotkeys
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -56,10 +46,11 @@ super + y
 super + g
 	bspc node -s biggest
 
-#
-# state/flags
-#
 
+# state/flags
+# fullscreen
+f11
+	bspc node -t fullscreen
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
