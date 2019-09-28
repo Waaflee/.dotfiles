@@ -43,18 +43,18 @@
 [shortcuts]
     close = ctrl+shift+space
     close_all = ctrl+space
-    history = ctrl+grave
+    history = ctrl+shift+h
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#232323"
+    background = "#1d1f28"
     foreground = "#a8a8a8"
-    timeout = 10
+    timeout = 4
 
 [urgency_normal]
-    background = "#232323"
+    background = "#1d1f28"
     foreground = "#a8a8a8"
-    timeout = 10
+    timeout = 4
 
 [urgency_critical]
     background = "#d64e4e"
