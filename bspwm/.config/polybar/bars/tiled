@@ -30,31 +30,20 @@ module-margin = 1
 ; Fonts are defined using <font-name>;<vertical-offset>
 font-0 = Fira Code:size=10;2.5
 font-1 = FontAwesome5Free:style=Solid:size=10;2
-
 modules-left = bspwm
 modules-center = date
 modules-right = pulseaudio sep temperature sep ram sep cpu
-; The separator will be inserted between the output of each module
-separator =
 dim-value = 1.0
 wm-name = bspwm
-; Available positions:
-;   left
-;   center
-;   right
-;   none
+wm-restack = bspwm
 tray-position = none
-; If true, the bar will not shift its
-; contents when the tray changes
 tray-detached = false
 tray-maxsize = 14
 tray-background = ${root.background}
 tray-offset-x = 0
 tray-offset-y = 0
 tray-padding = 0
-; Scale factor for tray clients
 tray-scale = 1.0
-wm-restack = bspwm
 dpi-x = 96
 dpi-y = 96
 enable-ipc = false
