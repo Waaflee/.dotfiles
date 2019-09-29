@@ -7,7 +7,8 @@ background-3 = #263238
 background-alt = #607d8b
 foreground = #eceff1 
 temperature = #e91e63
-ram = #aa00ff
+;ram = #aa00ff
+ram = #9c27b0
 cpu = #304ffe
 alert = #304ffe
 text = #eceff1 
@@ -28,12 +29,11 @@ module-margin = 1
 
 ; Fonts are defined using <font-name>;<vertical-offset>
 font-0 = Fira Code:size=10;2.5
-;font-0 = Proxima Soft:style=Regular:size=10;2.5
 font-1 = FontAwesome5Free:style=Solid:size=10;2
 
 modules-left = bspwm
 modules-center = date
-modules-right = temperature sep ram sep cpu
+modules-right = pulseaudio sep temperature sep ram sep cpu
 ; The separator will be inserted between the output of each module
 separator =
 dim-value = 1.0

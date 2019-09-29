@@ -1,7 +1,7 @@
 [global]
     monitor = 0
     follow = mouse
-    geometry = "320x3-25-25"
+    geometry = "240x3-25-25"
     indicate_hidden = yes
     shrink = no
     transparency = 0
@@ -14,7 +14,7 @@
     separator_color = frame
     sort = yes
     idle_threshold = 120
-    font = Source Sans Pro 10
+    font = Source Sans Pro 12
     line_height = 0
     markup = full
     format = "<span foreground='#f3f4f5'><b>%s %p</b></span>\n%b"
@@ -27,7 +27,7 @@
     hide_duplicate_count = false
     show_indicators = yes
     icon_position = left
-    max_icon_size = 32
+    max_icon_size = 48
     icon_path = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/16x16/apps/
     sticky_history = yes
     history_length = 20

@@ -130,6 +130,11 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 #Volume
+#XF86Audio{RaiseVolume,LowerVolume}
+#	volume {'5%+','5%-'}
+#XF86AudioMute 
+#	volume toggle
+#changeVolume 2dB+ unmute
 XF86Audio{RaiseVolume,LowerVolume}
 	amixer -D pulse sset Master {'5%+','5%-'}
 XF86AudioMute 

@@ -13,7 +13,7 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   - rofi: Application Launcher.
   - compton: Compositor.
   - pywal: Wallpaper based color palette generation tool.
-  - feh: Background setter.
+  - nitrogen: Background setter.
   - polybar: Bar.
   - dunst: Notification daemon.
   - redshift: Night light filer.
@@ -24,7 +24,8 @@ Installed packages are:
 ```
 bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
 python-pywal feh playerctl rofi rofi-clacl siji-git scrot 
-numlockx xorg-xsetroot dunst xorg-xinit
+numlockx xorg-xsetroot dunst xorg-xinit gnome-terminal-transparency
+qt5-styleplugins nitrogen
 ``` 
 Polybar Icons:
 ```
@@ -33,6 +34,10 @@ ttf-font-awesome
 Fonts:
 ```
 ttf-fira-code ttf-dejavu
+```
+Gtk and Icon theme:
+```
+arc-gtk-theme paper-icon-theme-git
 ```
 
 

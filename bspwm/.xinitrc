@@ -60,5 +60,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CURRENT_DESKTOP=GNOME
 export DE=gnome
 export DESKTOP_SESSION=gnome
+export QT_QPA_PLATFORMTHEME=gtk2
 
 exec bspwm

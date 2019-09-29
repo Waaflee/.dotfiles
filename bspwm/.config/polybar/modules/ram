@@ -27,4 +27,4 @@ format = <label>
 label =  %gb_used%
 
 ;label-foreground = #8C54FE
-label-foreground = ${colors.ram}
+label-foreground = ${root.ram}
