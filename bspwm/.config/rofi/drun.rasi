@@ -56,7 +56,7 @@ element selected.active {
 }
 
 element-icon {
-    size:                           48;
+    size:                           64;
     border:                         0px;
 }
 

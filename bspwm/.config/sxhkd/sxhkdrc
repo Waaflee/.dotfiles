@@ -16,8 +16,8 @@ super + shift + w
 	firefox
 control + alt + l
 	dm-tool lock
-super + shift + f
-	nautilus
+#super + shift + f
+#	nautilus
 Print
 	scrot
 # make sxhkd reload its configuration files:
