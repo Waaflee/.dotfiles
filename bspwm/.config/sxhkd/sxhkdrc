@@ -10,6 +10,10 @@ super + c
 	rofi -show calc -modi calc -no-show-match -no-sort
 super + i
 	~/.config/rofi/rofi-wifi.sh
+super + z
+	~/.config/rofi/rofi-power.sh
+super + x
+	gnome-control-center
 super + shift + w 
 	firefox
 control + alt + l
@@ -18,8 +22,6 @@ super + shift + f
 	nautilus
 Print
 	scrot
-super + x
-	~/.config/rofi/rofi-power.sh
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

@@ -18,7 +18,7 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   - dunst: Notification daemon.
   - redshift: Night light filer.
   - scrot: Screenshot tool.
-  - Qt and Gtk uniform appearance
+  - Qt and Gtk uniform appearance.
   
 Installed packages are: 
 ```
@@ -61,7 +61,7 @@ trizen
 
 Terrific shell
 
-This config includes a lot of things, the .zshrc it's pretty well documented.
+The .zshrc it's pretty well documented.
 ```
 zsh oh-my-zsh-git micro-bin bat
 ```
