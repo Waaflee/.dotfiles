@@ -23,7 +23,7 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
 Installed packages are: 
 ```
 bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
-python-pywal feh playerctl rofi rofi-clacl siji-git scrot 
+python-pywal feh playerctl rofi-git rofi-calc scrot 
 numlockx xorg-xsetroot dunst xorg-xinit gnome-terminal-transparency
 qt5-styleplugins nitrogen
 ``` 
