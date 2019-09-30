@@ -3,7 +3,8 @@
 OPTIONS="Reboot\nShut-down\nSuspend\nLock"
 
 # source configuration or use default values
-  LAUNCHER="rofi -location 5 -width 15 -lines 4 -dmenu -i -p power -show-icons "
+  # LAUNCHER="rofi -location 0 -width 15 -lines 4 -dmenu -i -p power -show-icons"
+  LAUNCHER="rofi -theme drun -dmenu -i -p power -show-icons"
   USE_LOCKER="true"
   LOCKER="i3lock-fancy -t "btw i use arch" -f Source-Code-Pro"
 
@@ -27,7 +28,7 @@ then
         systemctl poweroff
         ;;
       Suspend)
-	systemctl suspend
+      	systemctl suspend
         ;;
       Lock)
         i3lock-fancy -t "btw i use arch" -f Source-Code-Pro
