@@ -9,3 +9,8 @@ walset() {
     wal -n -i "$@"
     feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 }
+
+hidesktop() {
+    cp "$@" ~/.local/share/applications/$(basename "$@")
+    echo "NoDisplay=true" >> ~/.local/share/applications/$(basename "$@")
+}
