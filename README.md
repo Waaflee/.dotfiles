@@ -39,8 +39,6 @@ Gtk and Icon theme:
 ```
 arc-gtk-theme paper-icon-theme-git
 ```
-
-
 For Redshift to work it's necessary to add the following lines to `/etc/geoclue/geoclue.conf`
 ```
 [redshift]
@@ -48,6 +46,10 @@ allowed=true
 system=false
 users=
 ```
+To get Chromiun to use gnome-keyring these packages are also required:
+`gnome-keyring libsecret`
+
+Keyring management can be done with `seahorse`
 
 ## trizen
 
