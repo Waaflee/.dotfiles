@@ -4,6 +4,7 @@ The title says pretty much all there is to it.
 
 Each folder it's meant to be independent of the others and manages isolated packages/setups
 
+
 ## bspwm
 
 Awesome tiling wm, the bspwm folder has everything needed to run the session. This includes:
@@ -33,7 +34,7 @@ ttf-font-awesome
 ```
 Fonts:
 ```
-ttf-fira-code ttf-dejavu
+ttf-fira-code ttf-dejavu ttf-liberation ttf-google-sans
 ```
 Gtk and Icon theme:
 ```

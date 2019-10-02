@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ bspc desktop -f 10
+ rofi -theme drun -show drun
+ bspc desktop -f last

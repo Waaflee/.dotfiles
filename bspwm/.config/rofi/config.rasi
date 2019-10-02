@@ -1,21 +1,23 @@
 configuration {
     icon-theme:        "Paper";
-    font:              "Proxima Nova Alt 12";
+    font:              "Google Sans 11";
 }
 
 * {
     background-color:               transparent;
     background:                     #2E344099;
-    background-alt:                 #E5E9F047;
+//    background-alt:                 #E5E9F047;
+    background-alt:                 #E5E9F022;
     text-color:                     #D8DEE9;
-    selected-text-color:            #000000;
+    selected-text-color:            #D8DEE9;
     primary:                        #A3BE8C;
     urgent:                         #BF616A;
 }
 
 window {
     transparency:                   "real";
-    background-color:               @background;
+//    background-color:               @background;
+    background-color:               #eceff115;
 }
 
 prompt {
@@ -27,7 +29,7 @@ entry {
     background-color:               transparent;
     border:                         0px 0px solid 1px 0px;
     border-color:                   @text-color;
-    font:                           "Proxima Nova Alt 12";
+    font:                           "Google Sans 16";
 }
 
 mainbox {
