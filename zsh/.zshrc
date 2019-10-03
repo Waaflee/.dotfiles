@@ -173,5 +173,3 @@ alias frances='xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"
 alias subs='subdl --lang="spa"'
 alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
-alias matlab='_JAVA_OPTIONS="-Dsun.java2d.opengl=true -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel" AWT_TOOLKIT=MToolkit _JAVA_AWT_WM_NONREPARENTING=1 matlab'
-alias scilab='_JAVA_OPTIONS="-Dsun.java2d.opengl=true -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel" AWT_TOOLKIT=MToolkit _JAVA_AWT_WM_NONREPARENTING=1 scilab'
