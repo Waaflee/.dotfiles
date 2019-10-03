@@ -5,8 +5,8 @@ export XDG_CURRENT_DESKTOP=GNOME
 export XDG_MENU_PREFIX=gnome-
 export DESKTOP_SESSION=gnome
 export DE=gnome
-# uniform look between qt and gtk
 
+# uniform look between qt and gtk
 export QT_QPA_PLATFORMTHEME=gtk2
 
 # Gnome Keyring
