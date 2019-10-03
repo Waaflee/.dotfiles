@@ -5,9 +5,8 @@ configuration {
 
 * {
     background-color:               transparent;
-    background:                     #2E344099;
-//    background-alt:                 #E5E9F047;
-    background-alt:                 #E5E9F022;
+    background:                     #263238AA;
+    background-alt:                 #E5E9F012;
     text-color:                     #D8DEE9;
     selected-text-color:            #D8DEE9;
     primary:                        #A3BE8C;
@@ -16,8 +15,7 @@ configuration {
 
 window {
     transparency:                   "real";
-//    background-color:               @background;
-    background-color:               #eceff115;
+    background-color:               @background;
 }
 
 prompt {
