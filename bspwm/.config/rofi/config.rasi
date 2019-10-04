@@ -1,6 +1,9 @@
 configuration {
     icon-theme:        "Paper";
     font:              "Google Sans 11";
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+    me-accept-custom: "MouseMiddle";
 }
 
 * {
