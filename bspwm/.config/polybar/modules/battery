@@ -49,7 +49,7 @@ format-full = <ramp-capacity> <label-full>
 ;   %percentage_raw%
 ;   %time%
 ;   %consumption% (shows current charge rate in watts)
-label-charging =  %percentage%%
+label-charging = %percentage%%
 
 ; Available tokens:
 ;   %percentage% (default) - is set to 100 if full-at is reached
@@ -61,7 +61,7 @@ label-discharging = %percentage%%
 ; Available tokens:
 ;   %percentage% (default) - is set to 100 if full-at is reached
 ;   %percentage_raw%
-label-full =  %percentage%%
+label-full = %percentage%%
 
 ; Only applies if <ramp-capacity> is used
 ramp-capacity-0 = 

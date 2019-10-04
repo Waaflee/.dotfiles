@@ -1,8 +1,8 @@
 [module/wifi]
 type = internal/network
 interface = wlp4s0
-
-label-connected = %essid%
+;label-connected = %essid%
+label-connected =
 format-connected = <ramp-signal> <label-connected>
 label-connected-foreground = #82B414
 
