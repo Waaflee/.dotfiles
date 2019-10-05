@@ -22,16 +22,16 @@ then
       Exit)
         eval $1
         ;;
-      Reboot)
+      )
         systemctl reboot
         ;;
-      Shut-down)
+      )
         systemctl poweroff
         ;;
-      Suspend)
+      )
       	systemctl suspend
         ;;
-      Lock)
+      )
         i3lock-fancy -t "btw i use arch" -f Source-Code-Pro
         ;;
       *)
