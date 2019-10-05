@@ -51,9 +51,10 @@ To get Chromiun to use gnome-keyring these packages are also required: `gnome-ke
 
 Keyring management can be done with `seahorse`
 
-To get gnome terminal transparency to match kitty's run:
+To get gnome terminal transparency to match kitty's run this matching your gnome-terminal profile id:
 ```
 dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/background-transparency-percent 65
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/font 'Fira Code 9'
 ```
 
 ## trizen
