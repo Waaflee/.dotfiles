@@ -16,7 +16,7 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   - nitrogen: Background setter.
   - polybar: Bar.
   - dunst: Notification daemon.
-  - redshift: Night light filer.
+  - redshift: Night light filter.
   - scrot: Screenshot tool.
   
 Installed packages are: 
@@ -50,6 +50,11 @@ users=
 To get Chromiun to use gnome-keyring these packages are also required: `gnome-keyring libsecret`
 
 Keyring management can be done with `seahorse`
+
+To get gnome terminal transparency to match kitty's run:
+```
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/background-transparency-percent 65
+```
 
 ## trizen
 
