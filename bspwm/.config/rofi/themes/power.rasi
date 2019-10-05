@@ -1,0 +1,67 @@
+configuration {
+    theme:                          "config";
+    show-icons:                     true;
+    font:                           "Google Sans 64";
+
+}
+
+window {
+    fullscreen:                     true;
+}
+
+prompt {
+    enabled:                        false;
+}
+
+entry  {
+    border-color:                   #00000000;
+    color:                          #00000000;
+    expand:                         true;
+    width:                          36em;
+    margin:                         10% 15% 5% 15%;
+
+}
+
+
+listview {
+    columns:                        4;
+    margin:                         25% 15% 35% 15%;
+}
+
+element {
+    orientation:                    horizontal;
+    padding:                        8px;
+    margin:                         8px;
+
+}
+
+element normal.urgent, element alternate.urgent {
+    background-color:               @urgent;
+}
+
+element normal.active, element alternate.active {
+    background-color:               @background-alt;
+}
+
+element selected {
+    background-color:               @background-alt;
+}
+
+element selected.urgent {
+    background-color:               @urgent;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+}
+
+element-icon {
+    size:                           64;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+}

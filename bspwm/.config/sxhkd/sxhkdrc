@@ -5,11 +5,11 @@ super + Return
 super + shift + Return
 	bspc rule -a \* -o state=floating && kitty
 super + @space
-	rofi -theme drun -show drun
+	rofi -theme drun -show drun -modi drun
 super + r
-	rofi -theme drun -show run
+	rofi -theme drun -show run -modi drun
 super + c
-	rofi -show calc -modi calc -no-show-match -no-sort
+	rofi -theme calc -show calc -modi calc -no-show-match -no-sort
 super + i
 	~/.config/rofi/rofi-wifi.sh
 super + x

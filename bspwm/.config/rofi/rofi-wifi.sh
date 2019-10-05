@@ -13,8 +13,8 @@ FONT="Source Code Pro 10"
 
 if [ -r "$DIR/config" ]; then
 	source ./config
-elif [ -r "~/.config/rofi/config" ]; then
-	source "~/.config/rofi/config"
+elif [ -r "~/.config/rofi/config.rasi" ]; then
+	source "~/.config/rofi/config.rasi"
 else
 	echo "WARNING: config file not found! Using default values."
 fi

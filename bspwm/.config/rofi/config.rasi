@@ -1,17 +1,17 @@
 configuration {
-    icon-theme:        "Paper";
-    font:              "Google Sans 11";
-    me-select-entry: "";
-    me-accept-entry: "MousePrimary";
-    me-accept-custom: "MouseMiddle";
+    icon-theme:                     "Paper";
+    font:                           "Google Sans 11";
+    me-select-entry:                "";
+    me-accept-entry:                "MousePrimary";
+    me-accept-custom:               "MouseMiddle";
 }
 
 * {
     background-color:               transparent;
-    background:                     #263238AA;
-    background-alt:                 #E5E9F012;
+    background:                     #263238;
+    background-alt:                 #00000000;
     text-color:                     #D8DEE9;
-    selected-text-color:            #D8DEE9;
+    selected-text-color:            #607d8b;
     primary:                        #A3BE8C;
     urgent:                         #BF616A;
 }
@@ -28,18 +28,18 @@ prompt {
 entry {
     padding:                        10px 10px 10px 10px;
     background-color:               transparent;
-    border:                         0px 0px solid 1px 0px;
-    border-color:                   @text-color;
+    border-color:                   #00000000;
+    color:                          #00000000;
     font:                           "Google Sans 16";
 }
 
-mainbox {
-    padding:                        10px 40px 10px 40px;
-}
-
-element {
-    padding:                        8px;
-}
+//mainbox {
+//    padding:                        10px 40px 10px 40px;
+//}
+//
+//element {
+//    padding:                        8px;
+//}
 
 element normal.urgent, element alternate.urgent {
     background-color:               @urgent;
