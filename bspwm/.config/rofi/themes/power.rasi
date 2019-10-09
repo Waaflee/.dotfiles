@@ -2,11 +2,12 @@ configuration {
     theme:                          "config";
     show-icons:                     true;
     font:                           "Google Sans 64";
-
 }
 
 window {
     fullscreen:                     true;
+    transparency:                   "real";
+    background-color:               #263238;
 }
 
 prompt {
@@ -14,25 +15,18 @@ prompt {
 }
 
 entry  {
-    border-color:                   #00000000;
-    color:                          #00000000;
-    expand:                         true;
-    width:                          36em;
-    margin:                         10% 15% 5% 15%;
-
+    enabled:                        false;
 }
-
 
 listview {
     columns:                        4;
-    margin:                         25% 15% 35% 15%;
+    margin:                         32% 20% 30% 20%;
 }
 
 element {
     orientation:                    horizontal;
     padding:                        8px;
-    margin:                         8px;
-
+    margin:                         2%;
 }
 
 element normal.urgent, element alternate.urgent {

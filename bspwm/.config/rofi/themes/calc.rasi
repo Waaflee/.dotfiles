@@ -5,6 +5,8 @@ configuration {
 
 window {
     fullscreen:                     true;
+    transparency:                   "real";
+    background-color:               #263238;
 }
 
 prompt {
@@ -13,10 +15,7 @@ prompt {
 
 entry  {
     expand:                         true;
-    margin:                         30% 15% 5% 15%;
-    border:                         0px 0px solid 1px 0px;
-    border-color:                   @text-color;
-    color:                          @text-color;
+    margin:                         30% 20% 0% 20%;
     font:                           "Google Sans 20";
 }
 
@@ -26,11 +25,12 @@ listview {
 }
 
 message {
-    margin:                         5% 15% 5% 15%;
+    margin:                         10% 20% 0% 20%;
+
 }
 
 textbox {
-    font:                           "Google Sans 20";
+    font:                           "Google Sans 25";
 
 }
 
