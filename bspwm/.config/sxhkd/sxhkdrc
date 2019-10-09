@@ -7,7 +7,7 @@ super + shift + Return
 super + @space
 	rofi -theme drun -show drun -modi drun
 super + r
-	rofi -theme drun -show run -modi drun
+	rofi -theme drun -show run -modi run
 super + c
 	rofi -theme calc -show calc -modi calc -no-show-match -no-sort
 super + i
@@ -17,7 +17,7 @@ super + x
 super + shift + w 
 	firefox
 control + alt + l
-	dm-tool lock
+	i3lock-fancy -t "btw i use arch" -f Source-Code-Pro
 #super + shift + f
 #	nautilus
 Print

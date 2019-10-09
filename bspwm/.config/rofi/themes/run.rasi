@@ -11,6 +11,11 @@ entry  {
     margin:                         20% 40% 0% 40%;
 }
 
+listview {
+    columns:                        1;
+    margin:                         25% 40% 15% 40%;
+}
+
 element {
     expand:                         true;
 }
