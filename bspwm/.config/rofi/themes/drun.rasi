@@ -14,12 +14,12 @@ prompt {
 entry  {
     expand:                         true;
     width:                          20%;
-    margin:                         20% 40% 0% 40%;
+    margin:                         15% 40% 0% 40%;
 }
 
 listview {
     columns:                        6;
-    margin:                         7% 20% 15% 20%;
+    margin:                         10% 20% 15% 20%;
 }
 
 element {
@@ -33,11 +33,12 @@ element normal.urgent, element alternate.urgent {
 }
 
 element normal.active, element alternate.active {
-    background-color:               @background-alt;
+    background-color:               @drun-background-alt;
 }
 
 element selected {
-    background-color:               @background-alt;
+    background-color:               @drun-background-alt;
+    color:                          @drun-selected-text-color;
 }
 
 element selected.urgent {
@@ -45,11 +46,11 @@ element selected.urgent {
 }
 
 element selected.active {
-    background-color:               @background-alt;
+    background-color:               @drun-background-alt;
 }
 
 element-icon {
-    size:                           72;
+    size:                           80;
     border:                         0px;
 }
 

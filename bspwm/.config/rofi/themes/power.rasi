@@ -7,7 +7,7 @@ configuration {
 window {
     fullscreen:                     true;
     transparency:                   "real";
-    background-color:               #263238;
+    background-color:               @power-background-color;
 }
 
 prompt {
@@ -34,11 +34,12 @@ element normal.urgent, element alternate.urgent {
 }
 
 element normal.active, element alternate.active {
-    background-color:               @background-alt;
+    background-color:               transparent;
 }
 
 element selected {
-    background-color:               @background-alt;
+    background-color:               transparent;
+    color:                          @power-selected-text-color;
 }
 
 element selected.urgent {
@@ -46,7 +47,7 @@ element selected.urgent {
 }
 
 element selected.active {
-    background-color:               @background-alt;
+    background-color:               transparent;
 }
 
 element-icon {

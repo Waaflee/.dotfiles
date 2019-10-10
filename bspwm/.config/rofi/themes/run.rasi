@@ -3,21 +3,50 @@ configuration {
     show-icons:                     false;
 }
 
+window {
+    fullscreen:                     true;
+    background-color:               @run-background-color;
+}
+
 prompt {
     enabled:                        false;
 }
 
 entry  {
-    margin:                         20% 40% 0% 40%;
+    margin:                         30% 40% 0% 40%;
 }
 
 listview {
     columns:                        1;
-    margin:                         25% 40% 15% 40%;
+    margin:                         5% 40% 35% 40%;
+}
+
+element normal.urgent, element alternate.urgent {
+    background-color:               @urgent;
+}
+
+element normal.active, element alternate.active {
+    background-color:               @background-alt;
+    color:                          @run-selected-text-color;
+}
+
+element selected {
+    background-color:               @background-alt;
+    color:                          @run-selected-text-color;
+}
+
+element selected.urgent {
+    background-color:               @urgent;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+    color:                          @run-selected-text-color;
 }
 
 element {
     expand:                         true;
+    margin:                         8px;
 }
 
 element-text {

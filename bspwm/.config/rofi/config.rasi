@@ -1,6 +1,6 @@
 configuration {
     icon-theme:                     "Paper";
-    font:                           "Google Sans 12";
+    font:                           "Google Sans 14";
     me-select-entry:                "";
     me-accept-entry:                "MousePrimary";
     me-accept-custom:               "MouseMiddle";
@@ -8,11 +8,16 @@ configuration {
 
 * {
     background-color:               transparent;
-//    background:                     #26323833;
-    background:                     #263238;
+    background:                     #26323833;
+    power-background-color:         #263238;
+    run-background-color:           #263238;
     background-alt:                 #00000000;
+    drun-background-alt:            #b0bec533;
     text-color:                     #eceff1;
-    selected-text-color:            #607d8b;
+    run-selected-text-color:        #d81b60;
+    drun-selected-text-color:       #eceff1;
+    power-selected-text-color:      #607d8b;
+    selected-text-color:            #ad1457;
     primary:                        #A3BE8C;
     urgent:                         #BF616A;
 }
@@ -26,8 +31,7 @@ window {
 mainbox {
     width:                          100%;
     height:                         100%;
-    background-color:               #21212188;
-
+    background-color:               #21212155;
 }
 
 prompt {
