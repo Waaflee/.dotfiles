@@ -10,11 +10,11 @@ configuration {
     background-color:               transparent;
     background:                     #26323833;
     power-background-color:         #263238;
-    run-background-color:           #263238;
+    run-background-color:           #000000;
     background-alt:                 #00000000;
     drun-background-alt:            #b0bec533;
     text-color:                     #eceff1;
-    run-selected-text-color:        #d81b60;
+    run-selected-text-color:        #f50057;
     drun-selected-text-color:       #eceff1;
     power-selected-text-color:      #607d8b;
     selected-text-color:            #ad1457;
