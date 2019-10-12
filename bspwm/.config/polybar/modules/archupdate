@@ -1,7 +1,8 @@
 [module/archupdate]
 type = custom/script
-label = %{A1:~/.config/polybar/modules/scripts/update.sh:}%output%%{A}
+label = %output%
 label-foreground = ${root.arch}
 label-background = ${root.arch-bg}
 exec = ~/.config/polybar/modules/scripts/archupdate.sh
+click-left = bspc rule -a \* -o state=floating && gnome-terminal -- sh -c 'trizen -Syu --noconfirm; dunstify -i terminal "Arch Linux Updates Indicator" "System has been updated"' && echo ""
 interval = 600
