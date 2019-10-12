@@ -22,7 +22,7 @@ module-margin = 2
 
 modules-left = bspwm spotify
 modules-center = date temperature ram cpu
-modules-right = volume battery wifi powermenu
+modules-right = volume battery filesystem wifi wifi-up wifi-down wired-up wired-down powermenu
 dim-value = 1.0
 wm-name = bspwm
 wm-restack = bspwm

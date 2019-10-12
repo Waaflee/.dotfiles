@@ -1,0 +1,29 @@
+[module/wired-up]
+type = internal/network
+interface = eno1
+interval = 1.0
+
+format-connected-prefix = "   "
+format-connected-suffix = "  "
+format-connected-prefix-foreground = ${root.ethernet}
+format-connected-prefix-background = ${root.ethernet-bg}
+format-connected-suffix-background = ${root.ethernet-bg}
+label-connected-background = ${root.ethernet-bg}
+label-connected = %upspeed:8%
+
+label-disconnected = 
+
+[module/wired-down]
+type = internal/network
+interface = eno1
+interval = 1.0
+
+format-connected-prefix = "   "
+format-connected-suffix = "  "
+format-connected-prefix-foreground = ${root.ethernet}
+format-connected-prefix-background = ${root.ethernet-bg}
+format-connected-suffix-background = ${root.ethernet-bg}
+label-connected-background = ${root.ethernet-bg}
+label-connected = %downspeed:8%
+
+label-disconnected = 

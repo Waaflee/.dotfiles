@@ -19,6 +19,6 @@ time = %H:%M
 date-alt = %A, %d %B %Y
 time-alt = %H:%M
 
-label = " %date% %time%"
+label = " %date% %time%"
 label-font = 0
 label-foreground = ${root.foreground}

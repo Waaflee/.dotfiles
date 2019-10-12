@@ -10,7 +10,7 @@ label-connected-background = ${root.wifi-bg}
 format-disconnected = <label-disconnected>
 label-disconnected = Not connected
 label-disconnected-foreground = ${root.disabled}
-label-disconnected-background = #BF616A
+label-disconnected-background = ${root.wifi-bg}
 
 ramp-signal-foreground = ${root.wifi}
 ramp-signal-background = ${root.wifi-bg}
@@ -20,3 +20,33 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-5 = 
+
+[module/wifi-up]
+type = internal/network
+interface = wlp4s0
+interval = 1.0
+
+format-connected-prefix = "   "
+format-connected-suffix = "  "
+format-connected-prefix-foreground = ${root.wifi}
+format-connected-prefix-background = ${root.wifi-bg}
+format-connected-suffix-background = ${root.wifi-bg}
+label-connected-background = ${root.wifi-bg}
+label-connected = %upspeed:8%
+
+label-disconnected = 
+
+[module/wifi-down]
+type = internal/network
+interface = wlp4s0
+interval = 1.0
+
+format-connected-prefix = "   "
+format-connected-suffix = "  "
+format-connected-prefix-foreground = ${root.wifi}
+format-connected-prefix-background = ${root.wifi-bg}
+format-connected-suffix-background = ${root.wifi-bg}
+label-connected-background = ${root.wifi-bg}
+label-connected = %downspeed:8%
+
+label-disconnected = 

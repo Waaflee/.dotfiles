@@ -2,6 +2,6 @@
 type = custom/text
 content-background = ${colors.powermenu-bg}
 content-foreground = ${colors.powermenu}
-content-padding = 1
+content-padding = 0
 content = %{A1:~/.config/rofi/rofi-power.sh:}  %{A}
 

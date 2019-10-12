@@ -1,0 +1,10 @@
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+format-mounted-prefix = "   "
+format-mounted-suffix = "  "
+format-mounted-prefix-foreground = ${root.filesystem}
+format-mounted-prefix-background = ${root.filesystem-bg}
+format-mounted-suffix-background = ${root.filesystem-bg}
+label-mounted = %percentage_used:2%%
