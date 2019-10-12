@@ -1,5 +1,7 @@
 [bar/flat]
 inherit = colors
+include-file = /home/wafle/.config/polybar/fonts
+
 
 monitor = ${env:Monitor}
 fixed-center = true
@@ -15,15 +17,9 @@ padding-left = 0
 padding-right = 1
 module-margin = 1
 
-; Fonts are defined using <font-name>;<vertical-offset>
-;font-0 = Fira Code:size=10;2.5
-font-0 = Google Sans:size=10;2
-;font-0 = Proxima Soft:style=Regular:size=10;2.5
-font-1 = FontAwesome5Free:style=Solid:size=10;2
-
 modules-left = bspwm
 modules-center = date
-modules-right = temperature sep ram sep cpu sep battery sep pulseaudio sep wifi 
+modules-right = temperature sep ram sep cpu sep battery sep volume sep wifi 
 ; The separator will be inserted between the output of each module
 separator = " "
 dim-value = 1.0

@@ -1,0 +1,14 @@
+[module/spotify]
+type = custom/script
+interval = 1
+bar-width = 50%
+format-prefix = "  "
+format-suffix = ""
+format-prefix-background = ${root.spotify-bg}
+format-prefix-foreground = ${root.foreground}
+format-suffix-background = ${root.spotify-bg}
+
+label = %output%
+label-background = ${root.spotify-bg}
+
+exec = python ~/.config/polybar/modules/scripts/spotify.py -f '{artist}: {song}'

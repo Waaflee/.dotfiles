@@ -9,4 +9,5 @@ label =  %percentage%%
 
 ;label-foreground = #0066CC
 label-foreground = ${root.cpu}
+label-background = ${root.cpu-bg}
 label-padding-right = 1

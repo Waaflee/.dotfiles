@@ -5,6 +5,11 @@ configuration {
 
 window {
     fullscreen:                     true;
+    transparency:                   "background";
+}
+
+mainbox {
+    background-color:               @drun-background-color;
 }
 
 prompt {
@@ -26,6 +31,7 @@ element {
     orientation:                    vertical;
     padding:                        8px;
     margin:                         8px;
+    
 }
 
 element normal.urgent, element alternate.urgent {

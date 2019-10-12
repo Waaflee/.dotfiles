@@ -1,24 +1,28 @@
-[bar/tiled]
+[bar/top]
 inherit = colors
 include-file = /home/wafle/.config/polybar/fonts
+background = #263238
+cpu = ${colors.foreground}
+ram = ${colors.foreground}
+temperature = ${colors.foreground}
 
 monitor = ${env:Monitor:DP-1}
 fixed-center = true
-width = 2510
+width = 100%
 height = 32
-offset-x = 25
-offset-y = 25
+offset-x = 0
+offset-y = 0
 
 radius = 0
 line-size = 2
-line-color = #cfd8dc
+line-color = ${root.highlight-color}
 padding-left = 0
-padding-right = 1
-module-margin = 1
+padding-right = 5
+module-margin = 2
 
-modules-left = bspwm
-modules-center = date
-modules-right = volume sep temperature sep ram sep cpu
+modules-left = bspwm spotify
+modules-center = date temperature ram cpu
+modules-right = volume battery wifi powermenu
 dim-value = 1.0
 wm-name = bspwm
 wm-restack = bspwm

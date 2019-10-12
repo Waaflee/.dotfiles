@@ -11,6 +11,7 @@ configuration {
     background:                     #26323833;
     power-background-color:         #263238;
     run-background-color:           #000000;
+    drun-background-color:          #00000088;
     background-alt:                 #00000000;
     drun-background-alt:            #b0bec533;
     text-color:                     #eceff1;

@@ -10,12 +10,13 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 export Monitor=$(polybar --list-monitors | cut -d":" -f1)
 # Launch Polybar, using default config location ~/.config/polybar/config
-if [[ $(hostname) == 'archlinux' ]]; then
-    polybar tiled &
-elif [[ $(hostname) == 'WafleBook' ]]; then
-    polybar flat &
-else
-    polybar tiled &
-fi
+# if [[ $(hostname) == 'archlinux' ]]; then
+#     polybar top &
+# elif [[ $(hostname) == 'WafleBook' ]]; then
+#     polybar flat &
+# else
+#     polybar tiled &
+# fi
+polybar top &
 
 echo "Polybar launched..."

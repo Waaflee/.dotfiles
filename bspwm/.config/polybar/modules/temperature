@@ -35,4 +35,5 @@ format = <label>
 label =  %temperature-c%
 
 ;label-foreground = #F92672
-label-foreground = ${colors.temperature}
+label-foreground = ${root.temperature}
+label-background = ${root.temperature-bg}

@@ -4,13 +4,16 @@ interface = wlp4s0
 ;label-connected = %essid%
 label-connected =
 format-connected = <ramp-signal> <label-connected>
-label-connected-foreground = #82B414
+label-connected-foreground = ${root.wifi}
+label-connected-background = ${root.wifi-bg}
 
 format-disconnected = <label-disconnected>
 label-disconnected = Not connected
-label-disconnected-foreground = #BF616A
+label-disconnected-foreground = ${root.disabled}
+label-disconnected-background = #BF616A
 
-ramp-signal-foreground = #82B414
+ramp-signal-foreground = ${root.wifi}
+ramp-signal-background = ${root.wifi-bg}
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 

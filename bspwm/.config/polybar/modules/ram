@@ -28,3 +28,4 @@ label =  %gb_used%
 
 ;label-foreground = #8C54FE
 label-foreground = ${root.ram}
+label-background = ${root.ram-bg}
