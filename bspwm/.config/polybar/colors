@@ -45,3 +45,6 @@ ethernet-bg = ${self.background}
 
 date = ${self.foreground}
 date-bg = ${self.background}
+
+arch = ${self.foreground}
+arch-bg = ${self.background}

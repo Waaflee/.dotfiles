@@ -16,3 +16,4 @@ include-file = /home/wafle/.config/polybar/modules/powermenu
 include-file = /home/wafle/.config/polybar/modules/filesystem
 include-file = /home/wafle/.config/polybar/modules/ethernet
 include-file = /home/wafle/.config/polybar/modules/lollypop
+include-file = /home/wafle/.config/polybar/modules/archupdate

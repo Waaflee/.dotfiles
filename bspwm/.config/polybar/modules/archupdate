@@ -1,0 +1,7 @@
+[module/archupdate]
+type = custom/script
+label = %{A1:~/.config/polybar/modules/scripts/update.sh:}%output%%{A}
+label-foreground = ${root.arch}
+label-background = ${root.arch-bg}
+exec = ~/.config/polybar/modules/scripts/archupdate.sh
+interval = 600
