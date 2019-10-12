@@ -1,7 +1,8 @@
 [bar/top]
 inherit = colors
 include-file = /home/wafle/.config/polybar/fonts
-background = #263238
+;background = #263238
+background = #00000000
 cpu = ${colors.foreground}
 ram = ${colors.foreground}
 temperature = ${colors.foreground}
