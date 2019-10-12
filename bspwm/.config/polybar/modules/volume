@@ -33,10 +33,12 @@ label-volume-background = ${root.volume-bg}
 ; Available tokens:
 ;   %percentage% (default)
 label-muted = 
-label-muted-foreground = #666
+label-muted-foreground = ${root.disabled}
 label-muted-background = ${root.volume-bg}
 
 ; Only applies if <ramp-volume> is used
+ramp-volume-foreground = ${root.volume}
+ramp-volume-background = ${root.volume-bg}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 

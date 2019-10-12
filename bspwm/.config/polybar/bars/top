@@ -1,11 +1,21 @@
 [bar/top]
 inherit = colors
 include-file = /home/wafle/.config/polybar/fonts
-;background = #263238
-background = #00000000
-cpu = ${colors.foreground}
-ram = ${colors.foreground}
-temperature = ${colors.foreground}
+background = #263244
+date = #ff5252
+temperature = #ff4081
+ram = #e040fb
+cpu = #7c4dff
+spotify = #4caf50
+volume = #b2ff59
+battery = #eeff41
+filesystem = #ffff00
+wifi = #ffd740
+wifi-alt = #ffab40
+ethernet = #ffd740
+ethernet-alt = #ffab40
+powermenu = #ff6e40
+
 
 monitor = ${env:Monitor:DP-1}
 fixed-center = true

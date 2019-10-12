@@ -1,0 +1,44 @@
+[colors]
+alert = #304ffe
+highlight-color = #cfd8dc
+disabled = #666
+
+background = #263238
+background-alt = #607d8b
+
+foreground = #eceff1 
+foreground-alt = #eceff1
+
+temperature = #e91e63
+temperature-bg = ${self.background}
+
+ram = #aa00ff
+ram-bg = ${self.background}
+
+cpu = #304ffe
+cpu-bg = ${self.background}
+
+spotify = ${self.foreground}
+spotify-bg = ${self.background}
+
+volume = ${self.foreground}
+volume-bg = ${self.background}
+
+battery = ${self.foreground}
+battery-bg = ${self.background}
+
+wifi = ${self.foreground}
+wifi-alt = ${self.foreground}
+wifi-bg = ${self.background}
+
+powermenu = ${self.foreground}
+powermenu-bg = ${self.background}
+
+filesystem = ${self.foreground}
+filesystem-bg = ${self.background}
+
+ethernet-alt = ${self.foreground}
+ethernet-bg = ${self.background}
+
+date = ${self.foreground}
+date-bg = ${self.background}

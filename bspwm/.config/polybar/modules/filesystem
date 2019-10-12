@@ -8,3 +8,5 @@ format-mounted-prefix-foreground = ${root.filesystem}
 format-mounted-prefix-background = ${root.filesystem-bg}
 format-mounted-suffix-background = ${root.filesystem-bg}
 label-mounted = %percentage_used:2%%
+label-mounted-foreground = ${root.filesystem}
+label-mounted-background = ${root.filesystem-bg}

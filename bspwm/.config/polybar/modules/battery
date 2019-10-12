@@ -1,7 +1,6 @@
 [module/battery]
 type = internal/battery
 
-; This is useful in case the battery never reports 100% charge
 full-at = 100
 
 ; Use the following command to list batteries and adapters:
@@ -9,15 +8,6 @@ full-at = 100
 battery = BAT1
 adapter = ACAD
 
-; If an inotify event haven't been reported in this many
-; seconds, manually poll for new values.
-;
-; Needed as a fallback for systems that don't report events
-; on sysfs/procfs.
-;
-; Disable polling by setting the interval to 0.
-;
-; Default: 5
 poll-interval = 5
 ; see "man date" for details on how to format the time string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
