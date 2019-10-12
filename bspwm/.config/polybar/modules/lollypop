@@ -2,13 +2,15 @@
 type = custom/script
 interval = 1
 bar-width = 50%
-format-prefix = ""
+;format-prefix = ""
+format-prefix = ""
 format-suffix = ""
 format-prefix-background = ${root.lollypop-bg}
 format-prefix-foreground = ${root.lollypop}
 format-suffix-background = ${root.lollypop-bg}
 
-label = %output%
+;label = %output%
+label = %{A1:bspc desktop -f ^1:}%output%%{A}
 label-foreground = ${root.lollypop}
 label-background = ${root.lollypop-bg}
 
