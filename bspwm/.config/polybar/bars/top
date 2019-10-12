@@ -7,6 +7,7 @@ temperature = #ff4081
 ram = #e040fb
 cpu = #7c4dff
 spotify = #4caf50
+lollypop = #ff80ab
 volume = #b2ff59
 battery = #eeff41
 filesystem = #ffff00
@@ -31,7 +32,7 @@ padding-left = 0
 padding-right = 5
 module-margin = 2
 
-modules-left = bspwm spotify
+modules-left = bspwm spotify lollypop
 modules-center = date temperature ram cpu
 modules-right = volume battery filesystem wifi wifi-up wifi-down wired-up wired-down powermenu
 dim-value = 1.0

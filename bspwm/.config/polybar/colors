@@ -21,6 +21,9 @@ cpu-bg = ${self.background}
 spotify = ${self.foreground}
 spotify-bg = ${self.background}
 
+lollypop = ${self.foreground}
+lollypop-bg = ${self.background}
+
 volume = ${self.foreground}
 volume-bg = ${self.background}
 

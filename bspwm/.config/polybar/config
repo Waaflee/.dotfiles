@@ -1,6 +1,5 @@
 include-file = /home/wafle/.config/polybar/colors
 
-include-file = /home/wafle/.config/polybar/bars/tiled
 include-file = /home/wafle/.config/polybar/bars/top
 
 include-file = /home/wafle/.config/polybar/modules/battery
@@ -16,3 +15,4 @@ include-file = /home/wafle/.config/polybar/modules/spotify
 include-file = /home/wafle/.config/polybar/modules/powermenu
 include-file = /home/wafle/.config/polybar/modules/filesystem
 include-file = /home/wafle/.config/polybar/modules/ethernet
+include-file = /home/wafle/.config/polybar/modules/lollypop
