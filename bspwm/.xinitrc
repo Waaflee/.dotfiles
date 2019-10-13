@@ -53,6 +53,8 @@ nitrogen --restore
 $HOME/.config/compton/launch.sh
 # Night Light
 redshift &
+# Plank
+XDG_SESSION_TYPE=X11 plank &
 
 # XDG Dirs
 xdg-user-dirs-gtk-update &
