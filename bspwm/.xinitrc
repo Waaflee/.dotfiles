@@ -39,7 +39,6 @@ setxkbmap -layout latam
 xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"
 # NumLock on boot
 numlockx &
-
 # Notifications
 dunst&
 
@@ -50,7 +49,6 @@ xsetroot -solid "#646464"
 # Desktop 
 # Walpaper
 nitrogen --restore
-# Polybar launched on bspwmrc
 # Launch compton
 $HOME/.config/compton/launch.sh
 # Night Light
@@ -62,13 +60,6 @@ xdg-user-dirs-gtk-update &
 # Gnome Keyring
 eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
-
 export XDG_CONFIG_HOME="$HOME/.config"
-# Ported exports to .profile
-# export XDG_CURRENT_DESKTOP=GNOME
-# export XDG_MENU_PREFIX=gnome-
-# export DE=gnome
-# export DESKTOP_SESSION=gnome
-# export QT_QPA_PLATFORMTHEME=gtk2
 
 exec bspwm
