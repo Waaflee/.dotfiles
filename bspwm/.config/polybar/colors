@@ -48,3 +48,9 @@ date-bg = ${self.background}
 
 arch = ${self.foreground}
 arch-bg = ${self.background}
+
+title = ${self.foreground}
+title-bg = ${self.background}
+
+weather = ${self.foreground}
+weather-bg = ${self.background}

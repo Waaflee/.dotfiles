@@ -6,6 +6,7 @@ fi
 
 if [ "$updates" -gt 0 ]; then
     echo " $updates"
+    dunstify -i terminal "Actualizaciones Disponibles" "$(checkupdates)"
 else
     echo ""
 fi
