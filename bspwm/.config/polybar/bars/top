@@ -1,7 +1,8 @@
 [bar/top]
 inherit = colors
 include-file = /home/wafle/.config/polybar/fonts
-background = #263244
+;background = #263244
+background = #313742
 date = #ff5252
 temperature = #ff4081
 ram = #e040fb
@@ -26,19 +27,19 @@ width = 100%
 height = 32
 offset-x = 0
 offset-y = 0
+padding-left = 0
+padding-right = 5
 locale = ${env:LANG:es_AR.UTF-8}
 
 radius = 0
 line-size = 2
 line-color = ${root.highlight-color}
-padding-left = 0
-padding-right = 5
-module-margin = 2
 
+module-margin = 2
 modules-left = bspwm spotify lollypop 
 modules-center = date temperature ram cpu weather
 modules-right = archupdate volume battery filesystem wifi wifi-up wifi-down wired-up wired-down powermenu
-dim-value = 1.0
+
 wm-name = bspwm
 wm-restack = bspwm
 tray-position = none
@@ -49,6 +50,7 @@ tray-offset-x = 0
 tray-offset-y = 0
 tray-padding = 0
 tray-scale = 1.0
+dim-value = 1.0
 dpi-x = 96
 dpi-y = 96
 enable-ipc = false
