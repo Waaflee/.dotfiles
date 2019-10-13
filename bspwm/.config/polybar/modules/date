@@ -8,8 +8,8 @@ time = %H:%M
 ; if `date-alt` or `time-alt` is defined, clicking
 ; the module will toggle between formats
 ;date-alt = %A, %d %B %Y
-date-alt = "  %A, %d de %B %Y"
-time-alt = %H:%M
+date-alt = "  %A, %d de %B %Y a las "
+time-alt = "%H:%M horas"
 
 label = "%date% %time%"
 label-font = 0
