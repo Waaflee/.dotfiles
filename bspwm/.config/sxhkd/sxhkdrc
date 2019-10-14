@@ -24,6 +24,10 @@ shift + Print
 	scrot --focused -o captura.png; cat captura.png | xclip -selection clipboard -t image/png
 control + shift + Print
 	flameshot gui
+control + shift + alt + r
+	ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac screen.mp4
+control + shift + alt + t
+	killall ffmpeg
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
