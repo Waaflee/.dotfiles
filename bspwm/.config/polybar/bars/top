@@ -43,14 +43,13 @@ modules-right = archupdate volume battery filesystem wifi wifi-up wifi-down wire
 wm-name = bspwm
 wm-restack = bspwm
 tray-position = none
-tray-detached = false
-tray-maxsize = 14
-tray-background = ${root.background}
-tray-offset-x = 0
-tray-offset-y = 0
-tray-padding = 0
-tray-scale = 1.0
+
 dim-value = 1.0
 dpi-x = 96
 dpi-y = 96
 enable-ipc = false
+
+cursor-click = pointer
+
+[settings]
+screenchange-reload = true
