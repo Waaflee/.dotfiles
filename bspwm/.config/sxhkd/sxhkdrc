@@ -19,11 +19,11 @@ super + shift + w
 super + e
 	nautilus
 Print
-	scrot
+	flameshot full -c
 shift + Print
-	scrot --focused
+	scrot --focused -o captura.png; cat captura.png | xclip -selection clipboard -t image/png
 control + shift + Print
-	scrot --select
+	flameshot gui
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
