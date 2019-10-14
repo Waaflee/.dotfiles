@@ -4,5 +4,4 @@ label = %output%
 label-foreground = ${root.weather}
 label-background = ${root.weather-bg}
 exec =  TIEMPO=$(curl "wttr.in/?format=%t" 2> /dev/null) && echo " $TIEMPO" 
-click-left = ~/.config/polybar/modules/scripts/weather.sh
 interval = 600

@@ -28,6 +28,8 @@ control + shift + alt + r
 	ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac screen.mp4
 control + shift + alt + t
 	killall ffmpeg
+super + p
+	XDG_SESSION_TYPE=X11 plank &
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
