@@ -65,6 +65,8 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
+ramp-capacity-background = ${root.battery-bg}
+ramp-capacity-foreground = ${root.battery}
 
 ; Only applies if <bar-capacity> is used
 bar-capacity-width = 10
@@ -77,6 +79,8 @@ animation-charging-3 = 
 animation-charging-4 = 
 ; Framerate in milliseconds
 animation-charging-framerate = 750
+animation-charging-background = ${root.battery-bg}
+animation-charging-foreground = ${root.battery}
 
 ; Only applies if <animation-discharging> is used
 animation-discharging-0 = 
@@ -86,3 +90,5 @@ animation-discharging-3 = 
 animation-discharging-4 = 
 ; Framerate in milliseconds
 animation-discharging-framerate = 500
+animation-discharging-background = ${root.battery-bg}
+animation-discharging-foreground = ${root.battery}

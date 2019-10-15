@@ -10,7 +10,7 @@ while pgrep -u $UID -x compton >/dev/null; do sleep 1; done
 if [[ $(hostname) == 'archlinux' ]]; then
     compton -b --config $HOME/.config/compton/compton.conf
 elif [[ $(hostname) == 'WafleBook' ]]; then
-    compton -b --config $HOME/.config/compton/compton.conf --no-dock-shadow --blur-background-exclude "window_type = 'dock'" --opacity-rule 100:"class_g = 'Polybar'" --glx-swap-method "undefined"
+    compton -b --config $HOME/.config/compton/compton.intel.conf
 else
     compton -b --config $HOME/.config/compton/compton.conf
 fi

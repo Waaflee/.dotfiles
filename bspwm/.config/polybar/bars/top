@@ -12,7 +12,7 @@ spotify = #4caf50
 lollypop = #ff80ab
 arch = #18ffff
 volume = #b2ff59
-battery = #eeff41
+battery = #b2ff59
 filesystem = #ffff00
 wifi = #ffd740
 wifi-alt = #ffab40
@@ -38,7 +38,7 @@ line-color = ${root.highlight-color}
 module-margin = 2
 modules-left = bspwm spotify lollypop 
 modules-center = date temperature ram cpu weather
-modules-right = archupdate volume battery filesystem wifi wifi-up wifi-down wired-up wired-down powermenu
+modules-right = archupdate battery volume filesystem wifi wifi-up wifi-down wired-up wired-down powermenu
 
 wm-name = bspwm
 wm-restack = bspwm
