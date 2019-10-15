@@ -43,8 +43,8 @@ numlockx &
 dunst&
 
 # Mouse & Pointer
-xsetroot -cursor_name left_ptr
 xsetroot -solid "#646464"
+xsetroot -cursor_name left_ptr
 
 # Desktop 
 # Walpaper
