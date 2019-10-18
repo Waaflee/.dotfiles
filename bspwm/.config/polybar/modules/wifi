@@ -26,7 +26,7 @@ type = internal/network
 interface = wlp4s0
 interval = 1.0
 
-format-connected-prefix = "   "
+format-connected-prefix = " "
 format-connected-suffix = "  "
 format-connected-prefix-foreground = ${root.wifi}
 format-connected-prefix-background = ${root.wifi-bg}
@@ -42,7 +42,7 @@ type = internal/network
 interface = wlp4s0
 interval = 1.0
 
-format-connected-prefix = "   "
+format-connected-prefix = " "
 format-connected-suffix = "  "
 format-connected-prefix-foreground = ${root.wifi-alt}
 format-connected-prefix-background = ${root.wifi-bg}
