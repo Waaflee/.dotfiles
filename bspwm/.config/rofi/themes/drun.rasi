@@ -27,7 +27,7 @@ entry  {
 
 listview {
     columns:                        6;
-    margin:                         10% 20% 15% 20%;
+    margin:                         10% 15% 10% 20%;
 }
 
 element {
