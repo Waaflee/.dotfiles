@@ -151,6 +151,8 @@ XF86AudioMute
 #Playerctl
 XF86Audio{Play,Next,Prev}
 	playerctl {play-pause,next,previous}
+alt + {d,s,a}
+	playerctl {play-pause,next,previous}
 
 #light
 XF86MonBrightness{Down,Up}
