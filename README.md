@@ -17,16 +17,17 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   - polybar: Bar.
   - dunst: Notification daemon.
   - redshift: Night light filter.
-  - scrot: Screenshot tool.
-  - i3lock: Screen Saver
-  - plank: Docker
+  - scrot & flameshot: Screenshot tool.
+  - ffmpeg: For screen recording.
+  - i3lock: Screen Saver.
+  - plank: Docker.
   
 Installed packages are: 
 ```
 bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
 playerctl rofi-git rofi-calc scrot numlockx xorg-xsetroot 
 dunst xorg-xinit gnome-terminal-transparency nitrogen i3lock-color 
-i3lock-fancy-git plank-git flameshot ffmpeg
+plank-git flameshot ffmpeg
 ``` 
 Polybar Icons:
 ```
