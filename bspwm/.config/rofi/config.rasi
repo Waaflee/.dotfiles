@@ -9,7 +9,7 @@ configuration {
 * {
     background-color:               transparent;
     background:                     #26323833;
-    power-background-color:         #263238;
+    power-background-color:         #263238bb;
     run-background-color:           #000000;
     drun-background-color:          #00000088;
     background-alt:                 #00000000;

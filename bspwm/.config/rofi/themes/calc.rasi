@@ -5,8 +5,8 @@ configuration {
 
 window {
     fullscreen:                     true;
-    transparency:                   "real";
-    background-color:               #263238;
+    transparency:                   "background";
+    background-color:               #00000099;
 }
 
 prompt {

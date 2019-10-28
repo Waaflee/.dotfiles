@@ -32,7 +32,8 @@ then
       	systemctl suspend
         ;;
       )
-        i3lock-fancy -t "btw i use arch" -f Source-Code-Pro
+        # i3lock-fancy -t "btw i use arch" -f Source-Code-Pro
+        ~/.scripts/lock_screen.sh
         ;;
       *)
         ;;

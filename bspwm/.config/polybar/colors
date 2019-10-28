@@ -55,3 +55,9 @@ title-bg = ${self.background}
 
 weather = ${self.foreground}
 weather-bg = ${self.background}
+
+desktop-bg = ${self.background}
+desktop = ${self.foreground}
+desktop-alt1 = ${self.foreground}
+desktop-alt2 = ${self.foreground}
+desktop-alt3 = ${self.foreground}
