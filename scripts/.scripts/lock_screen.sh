@@ -2,6 +2,8 @@
 
 source ~/.config/i3lock/i3lockrc
 
+export $(cat ~/.config/nitrogen/bg-saved.cfg | grep file)
+
 blank=33000000
 
 khl="$(~/.scripts/colorctl.sh -o -$delta -h ${rc:0:6})${rc: -2}"
