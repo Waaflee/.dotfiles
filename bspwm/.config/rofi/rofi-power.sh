@@ -33,7 +33,7 @@ then
         ;;
       )
         # i3lock-fancy -t "btw i use arch" -f Source-Code-Pro
-        sleep 0.125
+        sleep 0.25
         ~/.scripts/lock_screen.sh
         ;;
       *)

@@ -49,6 +49,7 @@ xsetroot -cursor_name left_ptr
 # Desktop 
 # Walpaper
 nitrogen --restore
+$HOME/.scripts/wallpaper.sh &
 # Launch compton
 $HOME/.config/compton/launch.sh
 # Night Light
