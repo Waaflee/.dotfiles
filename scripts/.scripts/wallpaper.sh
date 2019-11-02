@@ -3,10 +3,10 @@
 source ~/.config/user-dirs.dirs
 
 while true; do
-	sleep 300
+	sleep 600
 	if [[ $(hostname) == 'archlinux' ]]; then
-		nitrogen --set-zoom-fill  --random $XDG_PICTURES_DIR/Ultrawide
+		nitrogen --save --set-zoom-fill --random $XDG_PICTURES_DIR/Ultrawide
 	else
-		nitrogen --set-zoom-fill  --random $XDG_PICTURES_DIR/Fondos
+		nitrogen --save --set-zoom-fill  --random $XDG_PICTURES_DIR/Fondos
 	fi
 done
