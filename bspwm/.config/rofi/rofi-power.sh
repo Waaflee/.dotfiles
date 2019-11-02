@@ -29,6 +29,8 @@ then
         systemctl poweroff
         ;;
       )
+        sleep 0.25
+        ~/.scripts/lock_screen.sh
       	systemctl suspend
         ;;
       )
