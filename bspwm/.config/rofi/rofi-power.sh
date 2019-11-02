@@ -3,8 +3,6 @@
 # source configuration or use default values
 OPTIONS="\n\n\n"
 LAUNCHER="rofi -theme power -dmenu -i -selected-row 1"
-USE_LOCKER="true"
-LOCKER="i3lock-fancy -t "btw i use arch" -f Source-Code-Pro"
 
 # Show exit wm option if exit command is provided as an argument
 if [ ${#1} -gt 0 ]; then
@@ -25,6 +23,7 @@ then
         systemctl poweroff
         ;;
       )
+        sleep 0.5
       	systemctl suspend
         ;;
       )
