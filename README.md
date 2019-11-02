@@ -27,7 +27,7 @@ Installed packages are:
 bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
 playerctl rofi-git rofi-calc scrot numlockx xorg-xsetroot 
 dunst xorg-xinit gnome-terminal-transparency nitrogen i3lock-color 
-plank-git flameshot ffmpeg
+plank-git flameshot ffmpeg xss-lock imagemagick
 ``` 
 Polybar Icons:
 ```

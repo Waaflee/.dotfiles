@@ -6,7 +6,6 @@ sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
-
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
 fi
@@ -41,6 +40,8 @@ xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"
 numlockx &
 # Notifications
 dunst&
+# lockscreen
+xss-lock $HOME/.scripts/lock_screen.sh &
 
 # Mouse & Pointer
 xsetroot -solid "#646464"
