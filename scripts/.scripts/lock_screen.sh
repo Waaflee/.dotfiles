@@ -2,19 +2,16 @@
 
 source ~/.config/i3lock/i3lockrc
 
-export $(cat ~/.config/nitrogen/bg-saved.cfg | grep file)
-
-cp $file ~/.cache/$(basename $file)
-mogrify -blur 0x$blur ~/.cache/$(basename $file)
-
+#export $(cat ~/.config/nitrogen/bg-saved.cfg | grep file)
+#cp $file ~/.cache/$(basename $file)
+#mogrify -blur 0x$blur ~/.cache/$(basename $file)
+#	   --image ~/.cache/$(basename $file) \
 
 blank=33000000
-
 khl="$(~/.scripts/colorctl.sh -o -$delta -h ${rc:0:6})${rc: -2}"
 bshl="$(~/.scripts/colorctl.sh -o +$delta -h ${rc:0:6})${rc: -2}"
 
 i3lock --blur $blur \
-	   --image ~/.cache/$(basename $file) \
 	   --verifsize=16 \
 	   --veriftext="..." \
 	   --radius $radius \

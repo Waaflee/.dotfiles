@@ -14,6 +14,8 @@ super + i
 	~/.config/rofi/rofi-wifi.sh
 super + x
 	~/.config/rofi/rofi-power.sh
+super + l
+	~/.scripts/lock_screen.sh
 super + shift + w 
 	firefox
 super + e
