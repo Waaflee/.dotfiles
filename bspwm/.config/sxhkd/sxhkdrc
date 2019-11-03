@@ -22,7 +22,7 @@ super + e
 	nautilus
 Print
 	flameshot full -c
-shift + Print
+control + Print
 	scrot --focused -o captura.png; cat captura.png | xclip -selection clipboard -t image/png
 control + shift + Print
 	flameshot gui
