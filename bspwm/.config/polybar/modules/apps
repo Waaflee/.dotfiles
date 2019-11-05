@@ -1,0 +1,7 @@
+[module/apps]
+type = custom/text
+content = "  "
+content-background = ${root.apps-bg}
+content-foreground = ${root.apps}
+content-padding = 0
+click-left = rofi -theme drun -show drun -modi drun

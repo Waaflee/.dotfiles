@@ -2,6 +2,7 @@ include-file = /home/wafle/.config/polybar/colors
 
 include-file = /home/wafle/.config/polybar/bars/top
 
+include-file = /home/wafle/.config/polybar/modules/apps
 include-file = /home/wafle/.config/polybar/modules/bspwm
 include-file = /home/wafle/.config/polybar/modules/spotify
 include-file = /home/wafle/.config/polybar/modules/lollypop

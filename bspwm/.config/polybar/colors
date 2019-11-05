@@ -61,3 +61,6 @@ desktop-focused = ${self.foreground}
 desktop-occupied = ${self.foreground}
 desktop-empty = ${self.foreground}
 desktop-urgent = ${self.foreground}
+
+apps = ${self.foreground}
+apps-bg = ${self.background}

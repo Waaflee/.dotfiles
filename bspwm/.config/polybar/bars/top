@@ -1,6 +1,5 @@
 [bar/top]
 inherit = colors
-;include-file = /home/wafle/.config/polybar/fonts
 background = #00000000
 foreground = #212121
 desktop-focused = #fafafa
@@ -28,7 +27,7 @@ line-size = 2
 line-color = ${root.highlight-color}
 
 module-margin = 2
-modules-left = bspwm spotify lollypop 
+modules-left = apps bspwm spotify lollypop 
 modules-center = date temperature ram cpu weather
 modules-right = archupdate battery volume filesystem wifi-up wifi-down wired-up wired-down powermenu
 
