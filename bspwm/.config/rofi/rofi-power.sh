@@ -23,6 +23,7 @@ then
         systemctl poweroff
         ;;
       )
+        sleep 0.25
       	systemctl suspend
         ;;
       )

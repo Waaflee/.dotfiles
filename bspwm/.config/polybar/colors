@@ -9,13 +9,13 @@ background-alt = #607d8b
 foreground = #eceff1 
 foreground-alt = #eceff1
 
-temperature = #e91e63
+temperature = ${self.foreground}
 temperature-bg = ${self.background}
 
-ram = #aa00ff
+ram = ${self.foreground}
 ram-bg = ${self.background}
 
-cpu = #304ffe
+cpu = ${self.foreground}
 cpu-bg = ${self.background}
 
 spotify = ${self.foreground}
@@ -57,7 +57,7 @@ weather = ${self.foreground}
 weather-bg = ${self.background}
 
 desktop-bg = ${self.background}
-desktop = ${self.foreground}
-desktop-alt1 = ${self.foreground}
-desktop-alt2 = ${self.foreground}
-desktop-alt3 = ${self.foreground}
+desktop-focused = ${self.foreground}
+desktop-occupied = ${self.foreground}
+desktop-empty = ${self.foreground}
+desktop-urgent = ${self.foreground}

@@ -10,7 +10,7 @@ format-prefix-foreground = ${root.lollypop}
 format-suffix-background = ${root.lollypop-bg}
 
 ;label = %output%
-label = %{A1:bspc desktop -f ^1:}%output%%{A}
+label = %{A1:bspc desktop -f ^1:}%output%%{A} %{A1:playerctl previous:}    %{A} %{A1:playerctl play-pause:}  %{A} %{A1:playerctl next:}   %{A}
 label-foreground = ${root.lollypop}
 label-background = ${root.lollypop-bg}
 

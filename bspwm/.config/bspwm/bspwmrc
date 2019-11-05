@@ -11,7 +11,9 @@ bspc config window_gap           20
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config gapless_monocle      false
+
+bspc config top_padding 10
 
 bspc config automatic_scheme alternate
 bspc config pointer_modifier mod4
