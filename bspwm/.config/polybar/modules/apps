@@ -1,6 +1,6 @@
 [module/apps]
 type = custom/text
-content = "  "
+content = "  "
 content-background = ${root.apps-bg}
 content-foreground = ${root.apps}
 content-padding = 0
