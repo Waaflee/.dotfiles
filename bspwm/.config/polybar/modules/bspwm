@@ -24,7 +24,7 @@ label-background = ${root.desktop-bg}
 label-focused = ●
 label-occupied = ●
 label-urgent = ●
-label-empty = ●
+label-empty = O
  
 label-empty-padding = 1
 label-focused-padding = 1

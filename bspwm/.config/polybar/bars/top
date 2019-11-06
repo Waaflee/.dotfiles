@@ -4,7 +4,7 @@ background = #00000000
 foreground = #212121
 desktop-focused = #fafafa
 desktop-occupied = #212121
-desktop-empty = #00000000
+desktop-empty = #212121
 desktop-urgent = #ff3d00
 
 monitor = ${env:Monitor:DP-1}
