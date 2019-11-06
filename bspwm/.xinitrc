@@ -54,7 +54,6 @@ nitrogen --restore
 $HOME/.config/compton/launch.sh
 # Night Light
 redshift &
-
 # XDG Dirs
 xdg-user-dirs-gtk-update &
 
