@@ -40,6 +40,12 @@ super + p
 super + Escape
 	pkill -USR1 -x sxhkd
 
+#increase border size
+super + alt + {b,s}
+	bspc config border_width $(expr $(bspc config border_width) {+ 1, - 1})
+super + alt + o
+	bspc config border_width 0
+
 # bspwm hotkeys
 # quit/restart bspwm
 super + alt + {q,r}

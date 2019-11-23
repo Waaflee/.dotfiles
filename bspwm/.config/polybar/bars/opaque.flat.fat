@@ -1,0 +1,46 @@
+[bar/top]
+inherit = colors
+background = #263238
+foreground = #b0bec5
+desktop-focused = #607d8b
+desktop-occupied = #cfd8dc
+desktop-empty = #cfd8dc
+desktop-urgent = #ff5722
+
+monitor = ${env:Monitor:DP-1}
+fixed-center = true
+width = 100%
+height = 40
+offset-x = 0
+offset-y = 0
+padding-left = 10
+padding-right = 10
+locale = ${env:LANG:es_AR.UTF-8}
+
+font-0 = Google Sans:size=10;3
+font-1 = Font Awesome 5 Free:style=Solid:size=10;2
+font-2 = Font Awesome 5 Brands Regular:style=Regular:size=10;1
+font-3 = Font Awesome 5 Free Regular:style=Regular:size=10;1
+
+radius = 0
+line-size = 2
+line-color = ${root.highlight-color}
+
+module-margin = 4
+modules-left = filesystem-noicon temperature-noicon ram-noicon cpu-noicon
+modules-center = bspwm
+modules-right = archupdate battery volume-notext date-noicon wifi-condensed wired-condensed powermenu
+
+wm-name = bspwm
+wm-restack = bspwm
+tray-position = none
+override-redirect = false
+
+dim-value = 1.0
+dpi-x = 96
+dpi-y = 96
+enable-ipc = true
+cursor-click = pointer
+
+[settings]
+screenchange-reload = true

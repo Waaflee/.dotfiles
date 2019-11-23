@@ -1,14 +1,11 @@
 [module/volume]
 type = internal/pulseaudio
-
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
 sink = alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1
-
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
-use-ui-max = true
-
+use-ui-max = false
 ; Interval for volume increase/decrease (in percent points)
 ; Default: 5
 interval = 5
@@ -42,3 +39,18 @@ ramp-volume-background = ${root.volume-bg}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+
+[module/volume-notext]
+type = internal/pulseaudio
+;sink = alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1
+use-ui-max = false
+interval = 5
+format-volume = <label-volume>
+format-muted = <label-muted>
+label-volume = %percentage%%
+label-volume-foreground = ${root.volume}
+label-volume-background = ${root.volume-bg}
+label-muted = 
+label-muted-foreground = ${root.volume}
+label-muted-background = ${root.volume-bg}
+

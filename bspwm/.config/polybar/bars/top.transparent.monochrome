@@ -28,7 +28,7 @@ line-color = ${root.highlight-color}
 
 module-margin = 2
 modules-left = bspwm spotify lollypop 
-modules-center = date temperature ram cpu weather
+modules-center = date temperature ram cpu
 modules-right = archupdate battery volume filesystem wifi-up wifi-down wired-up wired-down powermenu
 
 wm-name = bspwm

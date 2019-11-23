@@ -1,8 +1,7 @@
 include-file = /home/wafle/.config/polybar/colors
 
-include-file = /home/wafle/.config/polybar/bars/top
+include-file = /home/wafle/.config/polybar/bars/opaque.flat.fat
 
-include-file = /home/wafle/.config/polybar/modules/apps
 include-file = /home/wafle/.config/polybar/modules/bspwm
 include-file = /home/wafle/.config/polybar/modules/spotify
 include-file = /home/wafle/.config/polybar/modules/lollypop
@@ -10,7 +9,6 @@ include-file = /home/wafle/.config/polybar/modules/date
 include-file = /home/wafle/.config/polybar/modules/temperature
 include-file = /home/wafle/.config/polybar/modules/ram
 include-file = /home/wafle/.config/polybar/modules/cpu
-include-file = /home/wafle/.config/polybar/modules/weather
 include-file = /home/wafle/.config/polybar/modules/archupdate
 include-file = /home/wafle/.config/polybar/modules/battery
 include-file = /home/wafle/.config/polybar/modules/volume
@@ -18,4 +16,3 @@ include-file = /home/wafle/.config/polybar/modules/filesystem
 include-file = /home/wafle/.config/polybar/modules/wifi
 include-file = /home/wafle/.config/polybar/modules/ethernet
 include-file = /home/wafle/.config/polybar/modules/powermenu
-include-file = /home/wafle/.config/polybar/modules/title

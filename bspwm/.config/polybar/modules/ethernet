@@ -1,8 +1,7 @@
 [module/wired-up]
 type = internal/network
 interface = eno1
-interval = 1.0
-
+interval = 2
 format-connected-prefix = " "
 format-connected-suffix = "  "
 format-connected-prefix-foreground = ${root.ethernet}
@@ -11,14 +10,12 @@ format-connected-suffix-background = ${root.ethernet-bg}
 label-connected = %upspeed:8%
 label-connected-foreground = ${root.ethernet}
 label-connected-background = ${root.ethernet-bg}
-
 label-disconnected = 
 
 [module/wired-down]
 type = internal/network
 interface = eno1
-interval = 1.0
-
+interval = 2
 format-connected-prefix = " "
 format-connected-suffix = "  "
 format-connected-prefix-foreground = ${root.ethernet-alt}
@@ -27,5 +24,15 @@ format-connected-suffix-background = ${root.ethernet-bg}
 label-connected = %downspeed:8%
 label-connected-foreground = ${root.ethernet-alt}
 label-connected-background = ${root.ethernet-bg}
-
 label-disconnected = 
+
+[module/wired-condensed]
+type = internal/network
+interface = eno1
+interval = 2
+format-connected-prefix-foreground = ${root.wifi-alt}
+format-connected-prefix-background = ${root.wifi-bg}
+format-connected-suffix-background = ${root.wifi-bg}
+label-connected = "%upspeed:8%   %downspeed:8%"
+label-connected-foreground = ${root.wifi-alt}
+label-connected-background = ${root.wifi-bg}
