@@ -29,7 +29,7 @@ line-color = ${root.highlight-color}
 module-margin = 4
 modules-left = filesystem-noicon temperature-noicon ram-noicon cpu-noicon
 modules-center = bspwm
-modules-right = archupdate battery volume-notext date-noicon wifi-condensed wired-condensed powermenu
+modules-right = archupdate battery date-noicon volume-notext wifi-condensed wired-condensed powermenu
 
 wm-name = bspwm
 wm-restack = bspwm
