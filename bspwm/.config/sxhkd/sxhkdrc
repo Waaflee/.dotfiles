@@ -41,10 +41,15 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 #increase border size
-super + alt + {b,s}
+super + alt + {t,y}
 	bspc config border_width $(expr $(bspc config border_width) {+ 1, - 1})
 super + alt + o
 	bspc config border_width 0
+#increase gap
+super + alt + {u,i}
+	bspc config window_gap $(expr $(bspc config window_gap) {+ 1, - 1})
+super + alt + p
+	bspc config window_gap 25
 
 # bspwm hotkeys
 # quit/restart bspwm
