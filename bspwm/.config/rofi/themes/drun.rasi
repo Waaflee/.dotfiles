@@ -9,7 +9,7 @@ window {
 }
 
 mainbox {
-    background-color:               @drun-background-color;
+    background-color:               @power-background-color;
 }
 
 prompt {

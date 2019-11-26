@@ -14,7 +14,7 @@ super + i
 	~/.config/rofi/rofi-wifi.sh
 super + x
 	~/.config/rofi/rofi-power.sh
-super + l
+super + alt + l
 	~/.scripts/lock_screen.sh
 super + shift + w 
 	firefox
@@ -50,6 +50,8 @@ super + alt + {u,i}
 	bspc config window_gap $(expr $(bspc config window_gap) {+ 1, - 1})
 super + alt + p
 	bspc config window_gap 25
+super + alt + g
+	bspc config window_gap 0
 
 # bspwm hotkeys
 # quit/restart bspwm
@@ -74,9 +76,6 @@ super + g
 
 
 # state/flags
-# fullscreen
-f11
-	bspc node -t fullscreen
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
@@ -102,8 +101,15 @@ alt + {_,shift + }Tab
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+super + braceleft
+	bspc desktop -f prev.local
+super + braceright
+	bspc desktop -f next.local
+
+super + shift + braceleft
+	bspc node -d prev.local
+super + shift + braceright
+	bspc node -d next.local
 
 # focus the last node/desktop
 super + {grave,Tab}

@@ -6,7 +6,8 @@ configuration {
 window {
     fullscreen:                     true;
     transparency:                   "background";
-    background-color:               #00000099;
+    //background-color:               #00000099;
+    background-color:               @power-background-color;
 }
 
 prompt {
