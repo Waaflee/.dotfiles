@@ -39,7 +39,7 @@ override-redirect = false
 dim-value = 1.0
 dpi-x = 96
 dpi-y = 96
-enable-ipc = true
+enable-ipc = false
 cursor-click = pointer
 
 [settings]

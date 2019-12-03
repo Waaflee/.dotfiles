@@ -60,6 +60,6 @@ interval = 2
 format-connected-prefix-foreground = ${root.wifi-alt}
 format-connected-prefix-background = ${root.wifi-bg}
 format-connected-suffix-background = ${root.wifi-bg}
-label-connected = " %downspeed:8%  %upspeed:8%"
+label-connected = "%downspeed:8%   %upspeed:8%"
 label-connected-foreground = ${root.wifi-alt}
 label-connected-background = ${root.wifi-bg}

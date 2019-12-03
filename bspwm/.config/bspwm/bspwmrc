@@ -26,6 +26,7 @@ bspc rule -a Vlc follow=on state=floating
 bspc rule -a Lollypop desktop='^1' follow=on
 bspc rule -a Spotify desktop='^1' follow=on
 bspc rule -a TelegramDesktop desktop='^1' follow=on
+bspc rule -a Chromium desktop='^2' follow=on
 bspc rule -a Gnome-system-monitor state=floating
 bspc rule -a Gnome-control-center state=floating
 bspc rule -a MenuLibre state=floating
