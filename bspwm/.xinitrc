@@ -41,7 +41,7 @@ numlockx &
 # Notifications
 dunst&
 # lockscreen
-xss-lock $HOME/.scripts/lock_screen.sh &
+# xss-lock $HOME/.scripts/lock_screen.sh &
 
 # Mouse & Pointer
 xsetroot -solid "#646464"

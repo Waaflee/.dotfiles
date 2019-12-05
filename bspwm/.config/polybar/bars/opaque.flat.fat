@@ -1,6 +1,6 @@
 [bar/top]
 inherit = colors
-background = #263238
+background = #d8263238
 foreground = #b0bec5
 desktop-focused = #607d8b
 desktop-occupied = #cfd8dc
