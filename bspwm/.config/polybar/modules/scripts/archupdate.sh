@@ -5,8 +5,8 @@ if ! updates=$(checkupdates 2> /dev/null | wc -l ); then
 fi
 
 if [ "$updates" -gt 0 ]; then
-    echo " $updates"
-    dunstify -i terminal "Actualizaciones Disponibles" "$(checkupdates)"
+    echo "   $updates"
+    dunstify -i terminal "Actualizaciones Disponibles" "$(checkupdates | head -n 5)"
 else
     echo ""
 fi

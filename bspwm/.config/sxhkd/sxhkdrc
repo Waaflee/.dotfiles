@@ -42,7 +42,10 @@ super + alt + s
 	gnome-control-center sound
 super + x
 	gnome-control-center
-
+control + shift + alt + q
+	notify-send "Disabled Notifications" && sleep 1 && notify-send "DUNST_COMMAND_PAUSE"
+control + shift + alt + w
+	notify-send "DUNST_COMMAND_RESUME" && notify-send "Enabled Notifications"
 
 # make sxhkd reload its configuration files:
 super + Escape

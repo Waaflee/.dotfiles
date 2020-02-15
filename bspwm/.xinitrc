@@ -56,7 +56,8 @@ $HOME/.config/compton/launch.sh
 redshift &
 # XDG Dirs
 xdg-user-dirs-gtk-update &
-
+# Ulauncher
+ulauncher &
 # Gnome Keyring
 eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
