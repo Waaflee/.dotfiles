@@ -9,9 +9,9 @@ configuration {
 * {
     background-color:               transparent;
     background:                     #26323833;
-    power-background-color:         #263238bb;
-    run-background-color:           #000000;
-    drun-background-color:          #00000088;
+    power-background-color:         #26323800;
+    run-background-color:           #00000000;
+    drun-background-color:          #26323800;
     background-alt:                 #00000000;
     drun-background-alt:            #b0bec533;
     text-color:                     #eceff1;
