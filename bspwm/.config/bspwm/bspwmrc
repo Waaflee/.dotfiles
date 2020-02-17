@@ -33,3 +33,4 @@ bspc rule -a MenuLibre state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a QjackCtl state=floating
 bspc rule -a "Ardour-5.12.0" desktop='^10' state=floating
+bspc rule -a "Ulauncher" state=floating

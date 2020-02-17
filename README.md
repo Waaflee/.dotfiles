@@ -13,6 +13,7 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   - compton: Compositor.
   - sxhkd: Keybindings.
   - rofi: Application Launcher.
+  - Ulauncher: Application Launcher.
   - nitrogen: Background setter.
   - polybar: Bar.
   - dunst: Notification daemon.
