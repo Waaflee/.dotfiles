@@ -4,5 +4,6 @@ label = "%output% "
 label-foreground = ${root.arch}
 label-background = ${root.arch-bg}
 exec = ~/.config/polybar/modules/scripts/archupdate.sh
-click-left = bspc rule -a \* -o state=floating && gnome-terminal -- sh -c 'trizen -Syu --noconfirm; dunstify -i terminal "Arch Linux Updates Indicator" "System has been updated"; exit' && echo ""
+click-left = bspc rule -a \* -o state=floating && kitty -- zsh -c 'trizen -Syu --noconfirm; dunstify -i terminal "Arch Linux Updates Indicator" "System has been updated"; exit'; echo ""
+click-right = echo ""
 interval = 600

@@ -6,7 +6,7 @@ configuration {
 
 window {
     fullscreen:                     true;
-    transparency:                   "real";
+    transparency:                   "background";
     background-color:               @power-background-color;
 }
 

@@ -5,6 +5,7 @@ configuration {
 
 window {
     fullscreen:                     true;
+    transparency:                   "background";
     background-color:               @run-background-color;
 }
 
@@ -28,6 +29,7 @@ element normal.urgent, element alternate.urgent {
 element normal.active, element alternate.active {
     background-color:               @background-alt;
     color:                          @run-selected-text-color;
+
 }
 
 element selected {
@@ -42,7 +44,7 @@ element selected.urgent {
 element selected.active {
     background-color:               @background-alt;
     color:                          @run-selected-text-color;
-}
+< }
 
 element {
     expand:                         true;
