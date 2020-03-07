@@ -78,3 +78,14 @@ The .zshrc it's pretty well documented.
 ```
 zsh oh-my-zsh-git micro-bin bat
 ```
+## Ulauncher
+
+Fast & Simple application laucnehr, extensible via plugins
+
+theme polaroid
+
+```
+cd ~/.config/ulauncher/user-themes
+git clone https://github.com/wsdfhjxc/ulauncher-theme-polaroid.git polaroid
+
+```
