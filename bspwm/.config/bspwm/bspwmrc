@@ -27,10 +27,12 @@ bspc rule -a Lollypop desktop='^1' follow=on
 bspc rule -a Spotify desktop='^1' follow=on
 bspc rule -a TelegramDesktop desktop='^1' follow=on
 bspc rule -a Chromium desktop='^2' follow=on
-bspc rule -a Gnome-system-monitor state=floating
-bspc rule -a Gnome-control-center state=floating
+bspc rule -a "Gnome-system-monitor" state=floating
+bspc rule -a "Gnome-control-center" state=floating
 bspc rule -a MenuLibre state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a QjackCtl state=floating
 bspc rule -a "Ardour-5.12.0" desktop='^10' state=floating
 bspc rule -a "Ulauncher" state=floating
+bspc rule -a "org.gnome.gedit" state=floating
+bspc rule -a "Godot_Engine" state=floating
