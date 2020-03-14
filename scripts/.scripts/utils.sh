@@ -18,3 +18,7 @@ hidesktop() {
 fastencodeh264() {
     for i in *.$1; do; echo "Encoding $i..."; ffmpeg -i $i -c:v h264_nvenc -c:a libvorbis "$(basename -s .$1 "$i").mkv" && rm $i; done; 
 }
+
+fastwebp() {
+	for i in *.$1; do; cwebp -q 50 $i -o $(basename -s .jpg $i).webp; done;
+}
