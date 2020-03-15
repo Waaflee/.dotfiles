@@ -13,7 +13,7 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   - compton: Compositor.
   - sxhkd: Keybindings.
   - rofi: Application Launcher.
-  - Ulauncher: Application Launcher.
+  - ulauncher: Application Launcher.
   - nitrogen: Background setter.
   - polybar: Bar.
   - dunst: Notification daemon.
@@ -21,14 +21,14 @@ Awesome tiling wm, the bspwm folder has everything needed to run the session. Th
   - scrot & flameshot: Screenshot tool.
   - ffmpeg: For screen recording.
   - i3lock: Screen Saver.
-  - plank: Docker.
+  - earlyoom: Early oom daemon.
   
 Installed packages are: 
 ```
 bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
 playerctl rofi-git rofi-calc scrot numlockx xorg-xsetroot 
 dunst xorg-xinit gnome-terminal-transparency nitrogen i3lock-color 
-plank-git flameshot ffmpeg xss-lock imagemagick
+plank-git flameshot ffmpeg xss-lock imagemagick earlyoom
 ``` 
 Polybar Icons:
 ```
@@ -77,15 +77,4 @@ Terrific shell
 The .zshrc it's pretty well documented.
 ```
 zsh oh-my-zsh-git micro-bin bat
-```
-## Ulauncher
-
-Fast & Simple application laucnehr, extensible via plugins
-
-theme polaroid
-
-```
-cd ~/.config/ulauncher/user-themes
-git clone https://github.com/wsdfhjxc/ulauncher-theme-polaroid.git polaroid
-
 ```
