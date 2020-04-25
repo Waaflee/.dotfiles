@@ -1,72 +1,56 @@
-configuration {
-    theme:                          "config";
-    show-icons:                     true;
+* {
+  background-color: #282c33dd;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+  width: 512px;
+  height: 155px;
 }
 
 window {
-    fullscreen:                     true;
-    transparency:                   "background";
-    //background-color:               #00000099;
-    background-color:               @power-background-color;
+  transparency: "real";
+  background-color: #00000000;
+}
+
+mainbox {
+  background-color: #00000000;
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [prompt, entry];
 }
 
 prompt {
-    enabled:                        false;
-}
-
-entry  {
-    expand:                         true;
-    margin:                         30% 20% 0% 20%;
-    font:                           "Google Sans 20";
-}
-
-listview {
-    columns:                        6;
-    margin:                         25% 20% 15% 20%;
-}
-
-message {
-    margin:                         10% 20% 0% 20%;
-
+  padding: 16px;
+  border: 0 1px 0 0;
 }
 
 textbox {
-    font:                           "Google Sans 25";
+  background-color: #2e343fdd;
+  border: 0 0 1px 0;
+  border-color: #282c33;
+  padding: 8px 16px;
+}
 
+entry {
+  font: "Google Sans 14";
+  padding: 16px;
+  background-color: #282c33ff;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
 }
 
 element {
-    orientation:                    vertical;
-    padding:                        8px;
-    margin:                         8px;
-}
-
-element normal.urgent, element alternate.urgent {
-    background-color:               @urgent;
-}
-
-element normal.active, element alternate.active {
-    background-color:               @background-alt;
+  border: 0 0 1px 0;
+  padding: 16px;
 }
 
 element selected {
-    background-color:               @background-alt;
-}
-
-element selected.urgent {
-    background-color:               @urgent;
-}
-
-element selected.active {
-    background-color:               @background-alt;
-}
-
-element-icon {
-    size:                           72;
-    border:                         0px;
-}
-
-element-text {
-    expand:                         true;
-    horizontal-align:               0.5;
+  background-color: #2e343fdd;
+  text-color: #607d8b;
 }

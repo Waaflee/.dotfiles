@@ -1,62 +1,62 @@
-configuration {
-    theme:                          "config";
-    show-icons:                     true;
-    font:                           "Google Sans 64";
+* {
+  background-color: #282c33dd;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+  width: 512px;
+  /* height: 285px; */
+  height: 227px;
 }
 
 window {
-    fullscreen:                     true;
-    transparency:                   "background";
-    background-color:               @power-background-color;
+  transparency: "real";
+  background-color: #00000000;
+}
+
+mainbox {
+  background-color: #00000000;
+}
+
+inputbar {
+  enabled: false;
+  border: 0 0 1px 0;
+  children: [prompt, entry];
 }
 
 prompt {
-    enabled:                        false;
+  padding: 16px;
+  border: 0 1px 0 0;
 }
 
-entry  {
-    enabled:                        false;
+textbox {
+  background-color: #2e343fdd;
+  border: 0 0 1px 0;
+  border-color: #282c33;
+  padding: 8px 16px;
+}
+
+entry {
+  font: "Google Sans 14";
+  padding: 16px;
+  background-color: #282c33ff;
 }
 
 listview {
-    columns:                        4;
-    margin:                         32% 20% 30% 20%;
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
 }
 
 element {
-    orientation:                    horizontal;
-    padding:                        8px;
-    margin:                         2%;
-}
-
-element normal.urgent, element alternate.urgent {
-    background-color:               @urgent;
-}
-
-element normal.active, element alternate.active {
-    background-color:               transparent;
-}
-
-element selected {
-    background-color:               transparent;
-    color:                          @power-selected-text-color;
-}
-
-element selected.urgent {
-    background-color:               @urgent;
-}
-
-element selected.active {
-    background-color:               transparent;
-}
-
-element-icon {
-    size:                           64;
-    border:                         0px;
+  border: 0 0 1px 0;
+  padding: 16px;
 }
 
 element-text {
-    expand:                         true;
-    horizontal-align:               0.5;
-    vertical-align:                 0.5;
+  horizontal-align: 0.5;
+}
+
+element selected {
+  background-color: #2e343fdd;
+  text-color: #607d8b;
 }

@@ -1,66 +1,76 @@
 configuration {
-    theme:                          "config";
-    show-icons:                     true;
+  show-icons: true;
+  icon-theme: "Paper";
+  font: "Google Sans 14";
+  me-select-entry: "";
+  me-accept-entry: "MousePrimary";
+  me-accept-custom: "MouseMiddle";
+}
+
+* {
+  background-color: #282c33dd;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+  width: 512px;
+  height: 342px;
 }
 
 window {
-    fullscreen:                     true;
-    transparency:                   "background";
+  transparency: "real";
+  background-color: #00000000;
 }
 
 mainbox {
-    background-color:               @power-background-color;
+  background-color: #00000000;
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [prompt, entry];
 }
 
 prompt {
-    enabled:                        false;
+  padding: 16px;
+  border: 0 1px 0 0;
 }
 
-entry  {
-    expand:                         true;
-    width:                          20%;
-    margin:                         15% 40% 0% 40%;
+textbox {
+  background-color: #2e343fdd;
+  border: 0 0 1px 0;
+  border-color: #282c33;
+  padding: 8px 16px;
+}
+
+entry {
+  font: "Google Sans 14";
+  padding: 16px;
+  background-color: #282c33ff;
 }
 
 listview {
-    columns:                        6;
-    margin:                         10% 15% 10% 20%;
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
 }
 
 element {
-    orientation:                    vertical;
-    padding:                        8px;
-    margin:                         8px;
-    
-}
-
-element normal.urgent, element alternate.urgent {
-    background-color:               @urgent;
-}
-
-element normal.active, element alternate.active {
-    background-color:               @drun-background-alt;
+  border: 0 0 1px 0;
+  padding: 16px;
 }
 
 element selected {
-    background-color:               @drun-background-alt;
-    color:                          @drun-selected-text-color;
-}
-
-element selected.urgent {
-    background-color:               @urgent;
-}
-
-element selected.active {
-    background-color:               @drun-background-alt;
+  background-color: #2e343fdd;
+  text-color: #607d8b;
 }
 
 element-icon {
-    size:                           80;
-    border:                         0px;
+  size: 24;
+  border: 0px;
 }
 
 element-text {
-    expand:                         true;
-    horizontal-align:               0.5;
+  expand: true;
+  horizontal-align: 0.5;
+  font: "Google Sans 13";
 }
