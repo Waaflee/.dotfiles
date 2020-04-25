@@ -20,5 +20,12 @@ fastencodeh264() {
 }
 
 fastwebp() {
-	for i in *.$1; do; cwebp -q 50 $i -o $(basename -s .jpg $i).webp; done;
+	for i in *.$1; do; cwebp $i -o $(basename -s .$1 $i).webp; done;
+}
+
+compress_and_resize_i() {
+    magick $1 -strip -interlace Plane -gaussian-blur 0.05 -quality 85% -resize x$2 $1
+}
+compress_i() {
+    magick $1 -strip -interlace Plane -gaussian-blur 0.05 -quality 85% $1
 }
