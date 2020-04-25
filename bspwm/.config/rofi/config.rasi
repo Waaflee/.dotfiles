@@ -15,8 +15,7 @@ configuration {
     background-alt:                 #00000000;
     drun-background-alt:            #b0bec533;
     text-color:                     #eceff1;
-    //run-selected-text-color:        #f50057;
-    run-selected-text-color:        #aa00ff;
+    run-selected-text-color:        #607d8b;
     drun-selected-text-color:       #eceff1;
     power-selected-text-color:      #607d8b;
     selected-text-color:            #ad1457;

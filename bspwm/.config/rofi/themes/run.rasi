@@ -1,56 +1,56 @@
-configuration {
-    theme:                          "config";
-    show-icons:                     false;
+* {
+  background-color: #282c33dd;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+  width: 512px;
+  height: 342px;
 }
 
 window {
-    fullscreen:                     true;
-    transparency:                   "background";
-    background-color:               @run-background-color;
+  transparency: "real";
+  background-color: #00000000;
+}
+
+mainbox {
+  background-color: #00000000;
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [prompt, entry];
 }
 
 prompt {
-    enabled:                        false;
+  padding: 16px;
+  border: 0 1px 0 0;
 }
 
-entry  {
-    margin:                         30% 40% 0% 40%;
+textbox {
+  background-color: #2e343fdd;
+  border: 0 0 1px 0;
+  border-color: #282c33;
+  padding: 8px 16px;
+}
+
+entry {
+  font: "Google Sans 14";
+  padding: 16px;
+  background-color: #282c33ff;
 }
 
 listview {
-    columns:                        1;
-    margin:                         5% 40% 35% 40%;
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
 }
 
-element normal.urgent, element alternate.urgent {
-    background-color:               @urgent;
-}
-
-element normal.active, element alternate.active {
-    background-color:               @background-alt;
-    color:                          @run-selected-text-color;
-
+element {
+  border: 0 0 1px 0;
+  padding: 16px;
 }
 
 element selected {
-    background-color:               @background-alt;
-    color:                          @run-selected-text-color;
-}
-
-element selected.urgent {
-    background-color:               @urgent;
-}
-
-element selected.active {
-    background-color:               @background-alt;
-    color:                          @run-selected-text-color;
-< }
-
-element {
-    expand:                         true;
-    margin:                         8px;
-}
-
-element-text {
-    expand:                         true;
+  background-color: #2e343fdd;
+  text-color: #607d8b;
 }
