@@ -173,3 +173,6 @@ alias frances='xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"
 alias subs='subdl --lang="spa"'
 alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
+alias help='bat ~/.config/sxhkd/sxhkdrc'
+alias performance='sudo cpupower frequency-set -g performance'
+alias powersave='sudo cpupower frequency-set -g powersave'
