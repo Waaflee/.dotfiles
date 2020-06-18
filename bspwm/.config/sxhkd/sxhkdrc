@@ -117,17 +117,17 @@ alt + {_,shift + }Tab
 #super + braceright
 #	bspc desktop -f next.local
 
-control + comma
-	bspc desktop -f prev.local
+#control + comma
+#	bspc desktop -f prev.local
 
-control + period
-	bspc desktop -f next.local
+#control + period
+#	bspc desktop -f next.local
 
-control + shift + comma
-	bspc node -d prev.local
+#control + shift + comma
+#	bspc node -d prev.local
 	
-control + shift + period
-	bspc node -d next.local
+#control + shift + period
+#	bspc node -d next.local
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -187,8 +187,8 @@ XF86AudioMute
 #Playerctl
 XF86Audio{Play,Next,Prev}
 	playerctl {play-pause,next,previous}
-alt + {d,s,a}
-	playerctl {play-pause,next,previous}
+#alt + {d,s,a}
+#	playerctl {play-pause,next,previous}
 
 #light
 XF86MonBrightness{Down,Up}
