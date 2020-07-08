@@ -32,8 +32,8 @@ control + shift + alt + t
 	killall ffmpeg
 control + shift + Escape
 	gnome-system-monitor
-control + shift + alt + c
-	$HOME/.config/compton/launch.sh
+#control + shift + alt + c
+#	$HOME/.config/compton/launch.sh
 control + shift + alt + p
 	$HOME/.config/polybar/launch.sh
 super + p
