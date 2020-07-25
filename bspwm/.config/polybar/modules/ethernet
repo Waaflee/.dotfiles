@@ -14,7 +14,7 @@ label-disconnected = 
 
 [module/wired-down]
 type = internal/network
-interface = eno1
+interface = enp7s0
 interval = 2
 format-connected-prefix = " "
 format-connected-suffix = "  "
@@ -28,7 +28,7 @@ label-disconnected =
 
 [module/wired-condensed]
 type = internal/network
-interface = eno1
+interface = enp7s0
 interval = 2
 format-connected-prefix-foreground = ${root.wifi-alt}
 format-connected-prefix-background = ${root.wifi-bg}

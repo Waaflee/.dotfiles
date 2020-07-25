@@ -4,16 +4,13 @@ super + Return
 	kitty	
 super + shift + Return
 	bspc rule -a \* -o state=floating && kitty
-super + @space
-	rofi -theme drun -show drun -modi drun
 super + r
-	rofi -theme run -show run -modi run
-super + c
-	rofi -theme calc -show calc -modi calc -no-show-match -no-sort
+	dmenu_run -q -o 0.75 -x 1080 -y 445 -w 400 -h 35 -p @wafle: -l 4 -dim 0.1
 super + i
 	~/.config/rofi/rofi-wifi.sh
 super + z
-	~/.config/rofi/rofi-power.sh
+	echo -e "first\nsecond\nthird" | dmenu
+#	~/.config/rofi/rofi-power.sh
 super + alt + l
 	~/.scripts/lock_screen.sh
 super + shift + w 

@@ -13,6 +13,7 @@ label-warn-foreground = #e91e63
 type = internal/temperature
 interval = 2
 thermal-zone = 0
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon0/temp2_input
 warn-temperature = 65
 format = <label>
 label = %temperature-c%
