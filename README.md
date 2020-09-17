@@ -1,4 +1,4 @@
-# Dotfiles
+pu# Dotfiles
 
 The title says pretty much all there is to it.
 
@@ -27,8 +27,8 @@ Installed packages are:
 ```
 bspwm-git sxhkd-git polybar-git compton-tryone-git kitty 
 playerctl rofi-git rofi-calc scrot numlockx xorg-xsetroot 
-dunst xorg-xinit gnome-terminal-transparency nitrogen i3lock-color 
-plank-git flameshot ffmpeg xss-lock imagemagick earlyoom
+dunst xorg-xinit nitrogen i3lock-color flameshot
+ffmpeg imagemagick earlyoom
 ``` 
 Polybar Icons:
 ```

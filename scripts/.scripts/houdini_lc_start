@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo /usr/lib/sesi/sesinetd.startup start
+
+while :
+do
+echo "Looping...";
+sleep 30;
+done

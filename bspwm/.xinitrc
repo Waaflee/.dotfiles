@@ -31,7 +31,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # earlyoom
-earlyoom -s 90,75 -n -r 5 --avoid '(^|/)(init|Xorg|ssh)$' --prefer '(^|/)(firefox|chromium)$' &
+earlyoom -s 50,35 -n -r 5 --avoid '(^|/)(init|Xorg|ssh|blender)$' --prefer '(^|/)(firefox|chromium)$' &
 # Keyboard
 sxhkd &
 # Layout
@@ -41,7 +41,7 @@ xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"
 # NumLock on boot
 numlockx &
 # Notifications
-dunst&
+dunst &
 # lockscreen
 # xss-lock $HOME/.scripts/lock_screen.sh &
 
