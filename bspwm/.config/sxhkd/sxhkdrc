@@ -33,6 +33,8 @@ control + shift + Escape
 #	$HOME/.config/compton/launch.sh
 control + shift + alt + p
 	$HOME/.config/polybar/launch.sh
+control + shift + alt + Return
+	$HOME/.scripts/start.sh
 super + p
 	XDG_SESSION_TYPE=X11 plank &
 super + alt + s
