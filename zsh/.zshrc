@@ -42,7 +42,7 @@ export VDPAU_DRIVER=nvidia
 # export PAGER=most
 
 # Better Pager with sintax highlighting and git integration
-export PAGER=bat
+export PAGER='bat --paging=never'
 
 # Trash support on electron based applications
 export ELECTRON_TRASH=gio
@@ -167,6 +167,8 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias bat='bat --paging=never'
+alias cat='bat --paging=never'
 alias purge='sudo pacman -Rns $(pacman -Qtdq)'
 alias run='export PATH=$PATH:$(pwd)'
 alias frances='xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"'
@@ -178,3 +180,6 @@ alias help='bat ~/.config/sxhkd/sxhkdrc'
 alias performance='sudo cpupower frequency-set -g performance'
 alias powersave='sudo cpupower frequency-set -g powersave'
 alias schedutil='sudo cpupower frequency-set -g schedutil'
+alias docker='podman'
+
+eval $(thefuck --alias)

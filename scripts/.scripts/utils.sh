@@ -29,3 +29,7 @@ compress_and_resize_i() {
 compress_i() {
     magick $1 -strip -interlace Plane -gaussian-blur 0.05 -quality 85% $1
 }
+generate_srcset() {
+    cwebp -q 60 $1 -o $1.webp
+    heif-enc -q 60 -A -o $1.avif $1
+}
