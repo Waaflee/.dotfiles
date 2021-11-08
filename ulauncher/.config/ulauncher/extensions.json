@@ -1,16 +1,16 @@
 {
-    "com.github.nesivmi.ulauncher-translate": {
-        "id": "com.github.nesivmi.ulauncher-translate",
-        "url": "https://github.com/nesivmi/ulauncher-translate",
-        "updated_at": "2020-10-10T18:08:22.957259",
-        "last_commit": "9bf5513e57b37a3f68acce459f7c878e57e8a16d",
-        "last_commit_time": "2019-09-16T20:21:07"
-    },
     "com.github.iboyperson.ulauncher-system": {
         "id": "com.github.iboyperson.ulauncher-system",
         "url": "https://github.com/iboyperson/ulauncher-system",
-        "updated_at": "2020-10-10T18:08:26.334217",
-        "last_commit": "3b2639fd106ed3ef664953eb868b80c2fb8428ea",
-        "last_commit_time": "2020-09-22T18:29:15"
+        "updated_at": "2021-07-08T18:00:04.605715",
+        "last_commit": "639facd8be9208afde0371def31913b0804709e8",
+        "last_commit_time": "2021-06-01T14:45:38"
+    },
+    "com.github.manahter.ulauncher-translate": {
+        "id": "com.github.manahter.ulauncher-translate",
+        "url": "https://github.com/manahter/ulauncher-translate",
+        "updated_at": "2021-07-09T22:50:11.894047",
+        "last_commit": "f81d32c583c7e3542bdba655e991a56e6d9a2c28",
+        "last_commit_time": "2021-04-09T18:12:40"
     }
 }

@@ -16,6 +16,9 @@ elif [ -d /opt/android-sdk ]; then
   export ANDROID_SDK_ROOT=$ANDROID_HOME
 fi
 
+# Rootless Docker Setup
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+
 # Custom Scripts folder
 if [ -d $HOME/.scripts ]; then
   export PATH="${PATH}:$HOME/.scripts"
@@ -174,12 +177,13 @@ alias run='export PATH=$PATH:$(pwd)'
 alias frances='xmodmap -e "keycode 54 = c C ccedilla Ccedilla ccedilla Ccedilla"'
 alias latam='setxkbmap -layout latam'
 alias subs='subdl --lang="spa"'
-alias docker='sudo docker'
-alias docker-compose='sudo docker-compose'
+# alias docker='sudo docker'
+# alias docker-compose='sudo docker-compose'
+alias purge-docker-containers='docker ps -a | grep Exited | cut -d " " -f 1 | xargs docker rm'
+alias purge-docker-images='docker rmi $(docker images -f "dangling=true" -q)'
 alias help='bat ~/.config/sxhkd/sxhkdrc'
 alias performance='sudo cpupower frequency-set -g performance'
 alias powersave='sudo cpupower frequency-set -g powersave'
 alias schedutil='sudo cpupower frequency-set -g schedutil'
-alias docker='podman'
-
+alias wacom='xsetwacom set 21 "Area" 0 1493 15200 6514'
 eval $(thefuck --alias)

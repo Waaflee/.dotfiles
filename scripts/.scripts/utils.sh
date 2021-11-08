@@ -33,3 +33,14 @@ generate_srcset() {
     cwebp -q 60 $1 -o $1.webp
     heif-enc -q 60 -A -o $1.avif $1
 }
+
+hide_lsp_desktop() {
+	echo "[Desktop Entry]
+	Hidden=true" > /tmp/1
+	
+	find /usr -name "*lsp_plug*desktop" 2>/dev/null | cut -f 5 -d '/' | xargs -I {} cp /tmp/1 ~/.local/share/applications/{}
+}
+
+set_brightness() {
+	ddcutil setvcp 10 $1
+}
